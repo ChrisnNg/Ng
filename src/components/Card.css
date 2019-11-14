@@ -24,7 +24,7 @@
   opacity: 0;
   transition: visibility 0s linear 300ms, opacity 300ms;
   position: relative;
-  top: 01%;
+  top: 10%;
   font-size: 20px;
   color: whitesmoke;
   -o-transition:.5s;

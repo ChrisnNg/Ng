@@ -5,6 +5,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Nav";
 import Card from "./components/Card";
+import { Row, Container, Col } from "react-bootstrap";
 
 function App() {
   return (
@@ -15,13 +16,53 @@ function App() {
         <p>Full Stack Web Developer</p>
       </header>
       <Navbar />
-      <Card
-        title="title of card 1"
-        text="On the other hand, we denounce with righteous indignation and dislike
+      <Container>
+        <Row>
+          <Col sm={6}>
+            <Card
+              title="Education"
+              text={
+                <>
+                  <b>Lighthouse Labs</b>
+                  <br />
+                  <>Graduate of 2019</>
+                </>
+              }
+              imgsrc={lhl}
+            />
+          </Col>
+          <Col sm={6}>
+            <Card
+              title="title of card 2"
+              text="On the other hand, we denounce with righteous indignation and dislike
         men who are so beguiled and demoralized by the charms of pleasure of the
         moment, so blinded by desire, that they cannot foresee the pain and"
-        imgsrc={lhl}
-      />
+              imgsrc={lhl}
+            />
+          </Col>
+        </Row>
+        <Row>
+          <Col sm={6}>
+            <Card
+              title="title of card 3"
+              text="On the other hand, we denounce with righteous indignation and dislike
+        men who are so beguiled and demoralized by the charms of pleasure of the
+        moment, so blinded by desire, that they cannot foresee the pain and"
+              imgsrc={lhl}
+            />
+          </Col>
+          <Col sm={6}>
+            <Card
+              title="title of card 4"
+              text="On the other hand, we denounce with righteous indignation and dislike
+        men who are so beguiled and demoralized by the charms of pleasure of the
+        moment, so blinded by desire, that they cannot foresee the pain and"
+              imgsrc={lhl}
+            />
+          </Col>
+        </Row>
+      </Container>
+
       <a
         className="App-link"
         href="https://reactjs.org"
