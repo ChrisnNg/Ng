@@ -6,7 +6,7 @@ const infoCard = props => {
   return (
     <>
       <Card className="bg-dark text-white card">
-        <Card.Img src={props.imgsrc} alt="card image" />
+        <Card.Img src={props.imgsrc} alt="card-image" />
         <Card.ImgOverlay>
           <Card.Title className="card-title">
             <h3>{props.title}</h3>
