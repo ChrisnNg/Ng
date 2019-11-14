@@ -1,29 +1,64 @@
+
+.card {
+  margin: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .card-title {
-  color: black;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s linear 300ms, opacity 300ms;
+  visibility: visible;
   position: relative;
-  top: 25%;
+  top: 20%;
+  text-align: center;
+  font-size: 20px;
+  color: whitesmoke;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
 }
 
 .card-text {
-  color: black;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s linear 300ms, opacity 300ms;
   position: relative;
   top: 25%;
+  font-size: 20px;
+  color: whitesmoke;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
 }
 
-.card-overlay:hover .card-title{
-  visibility: visible;
+.card:hover .card {
+  background-color: darkblue;
   opacity: 1;
   transition: visibility 0s linear 0s, opacity 300ms;
 }
 
-.card-overlay:hover .card-text{
+.card:hover .card-title{
   visibility: visible;
   opacity: 1;
   transition: visibility 0s linear 0s, opacity 300ms;
+  color: black;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.card:hover .card-text{
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 300ms;
+  color: black;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
 }

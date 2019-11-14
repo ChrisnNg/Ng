@@ -5,13 +5,13 @@ import "./Card.css";
 const infoCard = props => {
   return (
     <>
-      <Card className="bg-dark text-white">
+      <Card className="bg-dark text-white card">
         <Card.Img src={props.imgsrc} alt="card image" />
-        <Card.ImgOverlay className="card-overlay">
-          <Card.Title className="card-title text-center">
-            {props.title}
+        <Card.ImgOverlay>
+          <Card.Title className="card-title">
+            <h3>{props.title}</h3>
           </Card.Title>
-          <Card.Text className="card-text text-center">{props.text}</Card.Text>
+          <Card.Text className="card-text">{props.text}</Card.Text>
         </Card.ImgOverlay>
       </Card>
     </>
