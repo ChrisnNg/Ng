@@ -1,7 +1,29 @@
-.CardTitle {
+.card-title {
   color: black;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 300ms, opacity 300ms;
+  position: relative;
+  top: 25%;
 }
 
-.CardText {
+.card-text {
   color: black;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 300ms, opacity 300ms;
+  position: relative;
+  top: 25%;
+}
+
+.card-overlay:hover .card-title{
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 300ms;
+}
+
+.card-overlay:hover .card-text{
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 300ms;
 }
