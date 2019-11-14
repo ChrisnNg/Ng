@@ -1,5 +1,6 @@
 import React from "react";
 import pfp from "./assets/pfp.png";
+import lhl from "./assets/lhl.jpg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Nav";
@@ -20,7 +21,7 @@ function App() {
         text="On the other hand, we denounce with righteous indignation and dislike
         men who are so beguiled and demoralized by the charms of pleasure of the
         moment, so blinded by desire, that they cannot foresee the pain and"
-        imgsrc={Card1}
+        imgsrc={lhl}
       />
       <a
         className="App-link"
