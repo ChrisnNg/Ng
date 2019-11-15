@@ -1,9 +1,8 @@
 section {
-  /* background-image: url("paper.gif"); */
+  background-image: url("../assets/brushed-alum.png"), linear-gradient(#eb01a5, #d13531);;
   height: 100vh;
   width: 100vw;
   font-family: 'Bebas Neue', cursive;
-  background-image: linear-gradient(#364652, #04151F);
 }
 
 section article {
