@@ -9,6 +9,7 @@ section article {
   position: relative;
   top: 33vh;
   text-shadow: 3px 3px #04151F;
+  margin-bottom: 0;
 }
 
 .code-Text {
@@ -17,4 +18,9 @@ section article {
 
 .code {
   color: violet;
+}
+
+.last {
+  position: relative;
+  right: 30px;
 }

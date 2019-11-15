@@ -14,9 +14,20 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Landing />
-        <img src={pfp} className="App-logo" alt="logo" />
-        <p>Christopher Ng</p>
-        <p>Full Stack Web Developer</p>
+        {/* <img src={pfp} className="App-logo" alt="logo" /> */}
+        <Fade left>
+          <span>
+            <b>Christopher</b>
+          </span>
+        </Fade>
+        <Fade right>
+          <span>
+            <b>Ng</b>
+          </span>
+        </Fade>
+        <Fade bottom>
+          <p>Full Stack Web Developer</p>
+        </Fade>
       </header>
       <Navbar />
       <Container>
