@@ -8,6 +8,7 @@ import Card from "./components/Card";
 import { Row, Container, Col } from "react-bootstrap";
 import Landing from "./components/Landing.js";
 import Fade from "react-reveal/Fade";
+import coding from "./assets/coding.jpg";
 
 function App() {
   return (
@@ -60,7 +61,7 @@ function App() {
               <Card
                 title="Hobbies"
                 text={
-                  <article className="">
+                  <>
                     <span className="code">while</span>
                     <span> (</span>
                     <span className="code-Text">alive</span>
@@ -73,10 +74,11 @@ function App() {
                     <span className="code-Text">code</span>();
                     <br />
                     <span className="code-Text">repeat</span>();
-                    <p className="last">{"}"}</p>
-                  </article>
+                    <br />
+                    <span className="last">{"}"}</span>
+                  </>
                 }
-                imgsrc={lhl}
+                imgsrc={coding}
               />
             </Fade>
           </Col>
@@ -86,20 +88,16 @@ function App() {
                 title="Contact Me"
                 text={
                   <>
-                    <p>
-                      I am currently in Vancouver and can be reached by phone or
-                      email:
-                    </p>
+                    I am currently in Vancouver and can be reached by phone or
+                    email:
                     <br />
-                    <p>
-                      <span role="img">☎️</span> 778-302-7999
-                    </p>
-                    <p className="tooltippy">
-                      <span role="img">✉</span> ️Cristopherng@hotmail.com
-                    </p>
-                    <p className="mini">
+                    <span role="img">☎️</span> 778-302-7999
+                    <br />
+                    <span role="img">✉</span> ️Cristopherng@hotmail.com
+                    <br />
+                    <span className="mini">
                       no it's not mispelled. theres no 'h' after the 'c'
-                    </p>
+                    </span>
                   </>
                 }
                 imgsrc={pfp}
