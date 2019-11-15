@@ -15,15 +15,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Landing />
-        {/* <img src={pfp} className="App-logo" alt="logo" /> */}
-        <Fade left>
-          <span>
-            <b>Hi, I'm Christopher Ng</b>
-          </span>
-        </Fade>
-        <Fade right>
-          <p>A Full Stack Web Developer from Lighthouse Labs</p>
-        </Fade>
       </header>
       <Navbar />
       <Container>
@@ -62,20 +53,22 @@ function App() {
                 title="Hobbies"
                 text={
                   <>
-                    <span className="code">while</span>
-                    <span> (</span>
-                    <span className="code-Text">alive</span>
-                    <span>{") {"}</span>
-                    <br />
-                    <span className="code-Text">eat</span>();
-                    <br />
-                    <span className="code-Text">sleep</span>();
-                    <br />
-                    <span className="code-Text">code</span>();
-                    <br />
-                    <span className="code-Text">repeat</span>();
-                    <br />
-                    <span className="last">{"}"}</span>
+                    <span className="codes">
+                      <span className="code">while</span>
+                      <span> (</span>
+                      <span className="code-Text">alive</span>
+                      <span>{") {"}</span>
+                      <br />
+                      <span className="code-Text">eat</span>();
+                      <br />
+                      <span className="code-Text">sleep</span>();
+                      <br />
+                      <span className="code-Text">code</span>();
+                      <br />
+                      <span className="code-Text">repeat</span>();
+                      <br />
+                      <span className="last">{"}"}</span>
+                    </span>
                   </>
                 }
                 imgsrc={coding}
