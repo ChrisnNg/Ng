@@ -26,9 +26,9 @@ function App() {
       </header>
       <Navbar />
       <Container>
-        <Fade bottom>
-          <Row>
-            <Col sm={6}>
+        <Row>
+          <Col sm={6}>
+            <Fade bottom>
               <Card
                 title="Education"
                 text={
@@ -40,8 +40,10 @@ function App() {
                 }
                 imgsrc={lhl}
               />
-            </Col>
-            <Col sm={6}>
+            </Fade>
+          </Col>
+          <Col sm={6}>
+            <Fade bottom>
               <Card
                 title="title of card 2"
                 text="On the other hand, we denounce with righteous indignation and dislike
@@ -49,10 +51,12 @@ function App() {
         moment, so blinded by desire, that they cannot foresee the pain and"
                 imgsrc={lhl}
               />
-            </Col>
-          </Row>
-          <Row>
-            <Col sm={6}>
+            </Fade>
+          </Col>
+        </Row>
+        <Row>
+          <Col sm={6}>
+            <Fade bottom>
               <Card
                 title="title of card 3"
                 text="On the other hand, we denounce with righteous indignation and dislike
@@ -60,8 +64,10 @@ function App() {
         moment, so blinded by desire, that they cannot foresee the pain and"
                 imgsrc={lhl}
               />
-            </Col>
-            <Col sm={6}>
+            </Fade>
+          </Col>
+          <Col sm={6}>
+            <Fade bottom>
               <Card
                 title="Contact Me"
                 text={
@@ -76,9 +82,9 @@ function App() {
                 }
                 imgsrc={pfp}
               />
-            </Col>
-          </Row>
-        </Fade>
+            </Fade>
+          </Col>
+        </Row>
       </Container>
 
       <a
