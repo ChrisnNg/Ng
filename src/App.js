@@ -17,16 +17,11 @@ function App() {
         {/* <img src={pfp} className="App-logo" alt="logo" /> */}
         <Fade left>
           <span>
-            <b>Christopher</b>
+            <b>Hi, I'm Christopher Ng</b>
           </span>
         </Fade>
         <Fade right>
-          <span>
-            <b>Ng</b>
-          </span>
-        </Fade>
-        <Fade bottom>
-          <p>Full Stack Web Developer</p>
+          <p>A Full Stack Web Developer from Lighthouse Labs</p>
         </Fade>
       </header>
       <Navbar />
@@ -68,11 +63,18 @@ function App() {
             </Col>
             <Col sm={6}>
               <Card
-                title="title of card 4"
-                text="On the other hand, we denounce with righteous indignation and dislike
-        men who are so beguiled and demoralized by the charms of pleasure of the
-        moment, so blinded by desire, that they cannot foresee the pain and"
-                imgsrc={lhl}
+                title="Contact Me"
+                text={
+                  <>
+                    <b>
+                      I am currently in Vancouver and can be reached by phone or
+                      email.
+                    </b>
+                    <br />
+                    <>Shoot me a message!</>
+                  </>
+                }
+                imgsrc={pfp}
               />
             </Col>
           </Row>
