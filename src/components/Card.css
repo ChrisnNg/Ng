@@ -73,6 +73,11 @@ img.card-img {
   transform: translateY(10px);
 }
 
-article {
+
+.code {
+  text-align: center;
+}
+
+.code-Text {
   text-align: center;
 }
