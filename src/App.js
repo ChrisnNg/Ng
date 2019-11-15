@@ -61,7 +61,7 @@ function App() {
               <Card
                 title="Hobbies"
                 text={
-                  <div className="codes">
+                  <>
                     <span className="code">while</span>
                     <span> (</span>
                     <span className="code-Text">alive</span>
@@ -76,7 +76,7 @@ function App() {
                     <span className="code-Text">repeat</span>();
                     <br />
                     <span className="last">{"}"}</span>
-                  </div>
+                  </>
                 }
                 imgsrc={coding}
               />
@@ -93,7 +93,8 @@ function App() {
                     <br />
                     <i className="fas fa-mobile-alt" /> 778-302-7999
                     <br />
-                    <i className="far fa-envelope" /> ️Cristopherng@hotmail.com
+                    <i className="far fa-envelope" />
+                    <span className="shrink"> Cristopherng@hotmail.com</span>
                     <br />
                     <span className="mini">
                       no it's not mispelled. theres no 'h' after the 'c'

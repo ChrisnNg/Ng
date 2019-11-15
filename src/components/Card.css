@@ -32,6 +32,7 @@
   -moz-transition:.5s;
   -webkit-transition:.5s;
   transition:.5s;
+  text-align: center;
 }
 
 img.card-img {
@@ -71,13 +72,4 @@ img.card-img {
   -webkit-transition:.5s;
   transition:.5s;
   transform: translateY(10px);
-}
-
-
-.code {
-  text-align: center;
-}
-
-.code-Text {
-  text-align: center;
 }
