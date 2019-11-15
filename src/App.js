@@ -58,10 +58,24 @@ function App() {
           <Col sm={6}>
             <Fade bottom>
               <Card
-                title="title of card 3"
-                text="On the other hand, we denounce with righteous indignation and dislike
-        men who are so beguiled and demoralized by the charms of pleasure of the
-        moment, so blinded by desire, that they cannot foresee the pain and"
+                title="Hobbies"
+                text={
+                  <article className="">
+                    <span className="code">while</span>
+                    <span> (</span>
+                    <span className="code-Text">alive</span>
+                    <span>{") {"}</span>
+                    <br />
+                    <span className="code-Text">eat</span>();
+                    <br />
+                    <span className="code-Text">sleep</span>();
+                    <br />
+                    <span className="code-Text">code</span>();
+                    <br />
+                    <span className="code-Text">repeat</span>();
+                    <p className="last">{"}"}</p>
+                  </article>
+                }
                 imgsrc={lhl}
               />
             </Fade>
@@ -72,12 +86,20 @@ function App() {
                 title="Contact Me"
                 text={
                   <>
-                    <b>
+                    <p>
                       I am currently in Vancouver and can be reached by phone or
-                      email.
-                    </b>
+                      email:
+                    </p>
                     <br />
-                    <>Shoot me a message!</>
+                    <p>
+                      <span role="img">☎️</span> 778-302-7999
+                    </p>
+                    <p className="tooltippy">
+                      <span role="img">✉</span> ️Cristopherng@hotmail.com
+                    </p>
+                    <p className="mini">
+                      no it's not mispelled. theres no 'h' after the 'c'
+                    </p>
                   </>
                 }
                 imgsrc={pfp}
