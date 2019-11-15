@@ -36,8 +36,9 @@
 
 .card:hover img.card-img {
   -webkit-filter: blur(5px); /* Chrome, Safari, Opera */
-  filter: blur(5px);
+  /* filter: blur(5px); */
   transition: all 0.3s ease;
+  filter: opacity(.1);
 }
 
 .card-img-overlay:hover .card-title{

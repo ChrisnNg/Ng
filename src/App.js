@@ -6,11 +6,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Nav";
 import Card from "./components/Card";
 import { Row, Container, Col } from "react-bootstrap";
+import Landing from "./components/Landing.js";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Landing />
         <img src={pfp} className="App-logo" alt="logo" />
         <p>Christopher Ng</p>
         <p>Full Stack Web Developer</p>
