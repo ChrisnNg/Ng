@@ -7,6 +7,7 @@ import Navbar from "./components/Nav";
 import Card from "./components/Card";
 import { Row, Container, Col } from "react-bootstrap";
 import Landing from "./components/Landing.js";
+import Fade from "react-reveal/Fade";
 
 function App() {
   return (
@@ -19,50 +20,52 @@ function App() {
       </header>
       <Navbar />
       <Container>
-        <Row>
-          <Col sm={6}>
-            <Card
-              title="Education"
-              text={
-                <>
-                  <b>Lighthouse Labs</b>
-                  <br />
-                  <>Graduate of 2019</>
-                </>
-              }
-              imgsrc={lhl}
-            />
-          </Col>
-          <Col sm={6}>
-            <Card
-              title="title of card 2"
-              text="On the other hand, we denounce with righteous indignation and dislike
+        <Fade bottom>
+          <Row>
+            <Col sm={6}>
+              <Card
+                title="Education"
+                text={
+                  <>
+                    <b>Lighthouse Labs</b>
+                    <br />
+                    <>Graduate of 2019</>
+                  </>
+                }
+                imgsrc={lhl}
+              />
+            </Col>
+            <Col sm={6}>
+              <Card
+                title="title of card 2"
+                text="On the other hand, we denounce with righteous indignation and dislike
         men who are so beguiled and demoralized by the charms of pleasure of the
         moment, so blinded by desire, that they cannot foresee the pain and"
-              imgsrc={lhl}
-            />
-          </Col>
-        </Row>
-        <Row>
-          <Col sm={6}>
-            <Card
-              title="title of card 3"
-              text="On the other hand, we denounce with righteous indignation and dislike
+                imgsrc={lhl}
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col sm={6}>
+              <Card
+                title="title of card 3"
+                text="On the other hand, we denounce with righteous indignation and dislike
         men who are so beguiled and demoralized by the charms of pleasure of the
         moment, so blinded by desire, that they cannot foresee the pain and"
-              imgsrc={lhl}
-            />
-          </Col>
-          <Col sm={6}>
-            <Card
-              title="title of card 4"
-              text="On the other hand, we denounce with righteous indignation and dislike
+                imgsrc={lhl}
+              />
+            </Col>
+            <Col sm={6}>
+              <Card
+                title="title of card 4"
+                text="On the other hand, we denounce with righteous indignation and dislike
         men who are so beguiled and demoralized by the charms of pleasure of the
         moment, so blinded by desire, that they cannot foresee the pain and"
-              imgsrc={lhl}
-            />
-          </Col>
-        </Row>
+                imgsrc={lhl}
+              />
+            </Col>
+          </Row>
+        </Fade>
       </Container>
 
       <a
