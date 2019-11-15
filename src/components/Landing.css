@@ -8,6 +8,7 @@ section {
 section article {
   position: relative;
   top: 33vh;
+  text-shadow: 3px 3px #04151F;
 }
 
 .code-Text {
