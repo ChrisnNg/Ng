@@ -27,6 +27,9 @@ import Tooltip from "react-bootstrap/Tooltip";
 import jungle from "./assets/jungle_main.png";
 import miso from "./assets/miso_list_landing.png";
 import cat_park from "./assets/cat_park.png";
+import scheduler from "./assets/scheduler.gif";
+import tweeter from "./assets/tweeter.png";
+import lotide from "./assets/lotide.png";
 
 function App() {
   return (
@@ -222,6 +225,7 @@ function App() {
           </Row>
         </Container>
       </section>
+
       <section id="projects">
         <h2>Projects</h2>
         <Container>
@@ -245,11 +249,30 @@ function App() {
             <Col sm={4}>
               <Fade bottom>
                 <Card
-                  title="title of card 2"
-                  text="On the other hand, we denounce with righteous indignation and dislike
-        men who are so beguiled and demoralized by the charms of pleasure of the
-        moment, so blinded by desire, that they cannot foresee the pain and"
-                  imgsrc={lhl}
+                  title={
+                    <a
+                      href="https://github.com/ChrisnNg/scheduler"
+                      target="_blank"
+                    >
+                      Scheduler
+                    </a>
+                  }
+                  text={
+                    <article>
+                      <a
+                        href="https://vigorous-elion-2594d4.netlify.com/"
+                        target="_blank"
+                      >
+                        Scheduler-
+                      </a>
+                      <span>
+                        A smart, auto-categorizing todo list app. The user
+                        simply has to add the name of the thing, and it gets put
+                        into the correct list.
+                      </span>
+                    </article>
+                  }
+                  imgsrc={scheduler}
                 />
               </Fade>
             </Col>
@@ -286,7 +309,7 @@ function App() {
                   text={
                     <article>
                       <a href="https://misolist.herokuapp.com/" target="_blank">
-                        Miso_list!
+                        Miso_list-
                       </a>
                       <span>
                         A smart, auto-categorizing todo list app. The user
@@ -302,46 +325,32 @@ function App() {
             <Col sm={4}>
               <Fade bottom>
                 <Card
-                  title="Contact Me"
-                  text={
-                    <>
-                      I am currently in Vancouver and can be reached by phone or
-                      email:
-                      <br />
-                      <i className="fas fa-mobile-alt" /> 778-302-7999
-                      <br />
-                      <i className="far fa-envelope" />
-                      <span className="shrink"> Cristopherng@hotmail.com</span>
-                      <br />
-                      <span className="mini">
-                        no it's not mispelled. theres no 'h' after the 'c'
-                      </span>
-                    </>
+                  title={
+                    <a
+                      href="https://github.com/ChrisnNg/tweeter"
+                      target="_blank"
+                    >
+                      Tweeter
+                    </a>
                   }
-                  imgsrc={pfp}
+                  text="Tweeter is a simple, single-page Twitter clone. This was built to practice my HTML, CSS, JS, jQuery and AJAX front-end skills, and my Node, Express and MongoDB back-end skills"
+                  imgsrc={tweeter}
                 />
               </Fade>
             </Col>
             <Col sm={4}>
               <Fade bottom>
                 <Card
-                  title="Contact Me"
-                  text={
-                    <>
-                      I am currently in Vancouver and can be reached by phone or
-                      email:
-                      <br />
-                      <i className="fas fa-mobile-alt" /> 778-302-7999
-                      <br />
-                      <i className="far fa-envelope" />
-                      <span className="shrink"> Cristopherng@hotmail.com</span>
-                      <br />
-                      <span className="mini">
-                        no it's not mispelled. theres no 'h' after the 'c'
-                      </span>
-                    </>
+                  title={
+                    <a
+                      href="https://github.com/ChrisnNg/lotide"
+                      target="_blank"
+                    >
+                      Lotide
+                    </a>
                   }
-                  imgsrc={pfp}
+                  text="A mini clone of the Lodash library. BEWARE: This library was published for learning purposes. It is not intended for use in production-grade software. This project was created and published by me as part of my learnings at Lighthouse Labs."
+                  imgsrc={lotide}
                 />
               </Fade>
             </Col>
