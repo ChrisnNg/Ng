@@ -7,19 +7,19 @@ const Footer = props => {
       <section className="codes footer">
         <div className="socialMediaIcons">
           <a href="https://www.facebook.com/christopher.ng.5203?ref=bookmarks">
-            <i className="fab fa-facebook-square" />
+            <i className="fab fa-facebook-square fa-4x" />
           </a>
 
           <a href="https://www.linkedin.com/in/christopherkyleng/">
-            <i className="fab fa-linkedin" />
+            <i className="fab fa-linkedin fa-4x" />
           </a>
 
           <a href="https://www.instagram.com/cristopherng/">
-            <i className="fab fa-instagram" />
+            <i className="fab fa-instagram fa-4x" />
           </a>
 
           <a href="https://github.com/ChrisnNg">
-            <i className="fab fa-github-square" />
+            <i className="fab fa-github-square fa-4x" />
           </a>
         </div>
       </section>
