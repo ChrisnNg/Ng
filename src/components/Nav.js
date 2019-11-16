@@ -7,11 +7,32 @@ const Nav = () => {
   return (
     <>
       <Navbar variant="dark" sticky="top" className="navi">
-        <Link to="landing" spy={true} smooth={true} className="links">
+        <Link
+          to="landing"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          className="links"
+        >
           <b>Christopher Ng</b>
         </Link>
-        <Link to="about" spy={true} smooth={true} className="links">
+        <Link
+          to="about"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          className="links"
+        >
           About
+        </Link>
+        <Link
+          to="projects"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          className="links"
+        >
+          Projects
         </Link>
         <a href="https://resume.creddle.io/resume/ei50h47r5km">Resume</a>
       </Navbar>

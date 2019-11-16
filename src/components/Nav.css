@@ -13,3 +13,6 @@
 .links {
   margin-right: 15px;
 }
+.active {
+  border-bottom: 1px solid whitesmoke;
+}
