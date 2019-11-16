@@ -218,12 +218,24 @@ function App() {
                       <br />
                       <i className="fas fa-mobile-alt" /> 778-302-7999
                       <br />
-                      <i className="far fa-envelope" />
-                      <span className="shrink"> Cristopherng@hotmail.com</span>
+                      <OverlayTrigger
+                        key="test"
+                        placement="right"
+                        delay={{ show: 250, hide: 400 }}
+                        overlay={
+                          <Tooltip id={`tooltip-${"test"}`}>
+                            <strong>
+                              {"No 'h' after the 'c' is intended"}
+                            </strong>
+                          </Tooltip>
+                        }
+                      >
+                        <span>
+                          <i className="far fa-envelope" />{" "}
+                          Cristopherng@hotmail.com
+                        </span>
+                      </OverlayTrigger>
                       <br />
-                      <span className="mini">
-                        no it's not mispelled. theres no 'h' after the 'c'
-                      </span>
                     </>
                   }
                   imgsrc={pfp}

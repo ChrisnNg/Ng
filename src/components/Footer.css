@@ -10,6 +10,7 @@
 }
 
 .footer {
+  color: whitesmoke;
   height: 125px;
   padding: 25px;
   background: linear-gradient( #0c1115, #42526a); 

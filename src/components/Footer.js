@@ -5,6 +5,10 @@ const Footer = props => {
   return (
     <>
       <section className="codes footer">
+        <span ClassName="copy-right">
+          <i class="fas fa-copyright" />
+          &nbsp;Christopher Ng 2019
+        </span>
         <div className="socialMediaIcons">
           <a href="https://www.facebook.com/christopher.ng.5203?ref=bookmarks">
             <i className="fab fa-facebook-square fa-4x" />
