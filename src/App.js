@@ -237,6 +237,7 @@ function App() {
                       I am currently in Vancouver and can be reached by phone or
                       email:
                       <br />
+                      <br />
                       <i className="fas fa-mobile-alt" /> 778-302-7999
                       <br />
                       <OverlayTrigger
@@ -402,8 +403,10 @@ function App() {
         </Container>
       </section>
 
-      <Fade top>
+      <Fade left>
         <h2 />
+      </Fade>
+      <Fade right>
         <Footer />
       </Fade>
     </div>
