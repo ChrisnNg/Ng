@@ -34,7 +34,9 @@ const Nav = () => {
         >
           Projects
         </Link>
-        <a href="https://resume.creddle.io/resume/ei50h47r5km">Resume</a>
+        <a href="https://resume.creddle.io/resume/ei50h47r5km" target="_blank">
+          Resume
+        </a>
       </Navbar>
     </>
   );
