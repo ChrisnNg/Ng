@@ -52,3 +52,15 @@ img {
   height: 60px;
   margin-top: 25px;
 }
+
+a:link {
+  color: #8fbbf2;
+}
+
+a:visited {
+  color: #42526a;
+}
+
+a:hover {
+  color: #fecee2 !important;
+}

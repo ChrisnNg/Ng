@@ -7,12 +7,13 @@ const Nav = () => {
   return (
     <>
       <Navbar variant="dark" sticky="top" className="navi">
-        <Link to="landing" spy={true} smooth={true}>
+        <Link to="landing" spy={true} smooth={true} className="links">
           <b>Christopher Ng</b>
         </Link>
-        <Link to="about" spy={true} smooth={true}>
+        <Link to="about" spy={true} smooth={true} className="links">
           About
         </Link>
+        <a href="https://resume.creddle.io/resume/ei50h47r5km">Resume</a>
       </Navbar>
     </>
   );
