@@ -196,6 +196,11 @@ function App() {
                         <br />
                         <span className="last">{"}"}</span>
                       </span>
+                      <br />
+                      <span>
+                        Other hobbies I enjoy include Chess, Boxing, Guitar, and
+                        League of Legends!
+                      </span>
                     </>
                   }
                   imgsrc={coding}

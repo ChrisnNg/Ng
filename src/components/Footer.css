@@ -1,5 +1,5 @@
 .socialMediaIcons a {
-  color: #42526a;
+  color: whitesmoke;
   margin: 3px;
 }
 
@@ -7,4 +7,10 @@
   transform: translateY(-10px);
   transition: 0.5s;
   color: #ffdee4;
+}
+
+.footer {
+  height: 100px;
+  padding: 45px;
+  background: linear-gradient( #0c1115, #42526a); 
 }

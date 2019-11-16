@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = props => {
   return (
     <>
-      <section className="codes">
+      <section className="codes footer">
         <div className="socialMediaIcons">
           <a href="https://www.facebook.com/christopher.ng.5203?ref=bookmarks">
             <i className="fab fa-facebook-square" />

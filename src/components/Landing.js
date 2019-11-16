@@ -11,7 +11,7 @@ const Landing = props => {
             <b>Hi, I'm Christopher Ng</b>
           </Fade>
           <Fade right>
-            <p>A Full Stack Web Developer from Lighthouse Labs</p>
+            <p>A Full-Stack Web Developer Graduate from Lighthouse Labs</p>
           </Fade>
         </article>
       </section>
