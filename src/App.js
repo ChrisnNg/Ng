@@ -25,6 +25,7 @@ import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 
 import jungle from "./assets/jungle_main.png";
+import miso from "./assets/miso_list_landing.png";
 
 function App() {
   return (
@@ -268,28 +269,27 @@ function App() {
             <Col sm={4}>
               <Fade bottom>
                 <Card
-                  title="Hobbies"
-                  text={
-                    <>
-                      <span className="codes">
-                        <span className="code">while</span>
-                        <span> (</span>
-                        <span className="code-Text">alive</span>
-                        <span>{") {"}</span>
-                        <br />
-                        <span className="code-Text">eat</span>();
-                        <br />
-                        <span className="code-Text">sleep</span>();
-                        <br />
-                        <span className="code-Text">code</span>();
-                        <br />
-                        <span className="code-Text">repeat</span>();
-                        <br />
-                        <span className="last">{"}"}</span>
-                      </span>
-                    </>
+                  title={
+                    <a
+                      href="https://github.com/ChrisnNg/miso_list"
+                      target="_blank"
+                    >
+                      miso_list
+                    </a>
                   }
-                  imgsrc={coding}
+                  text={
+                    <article>
+                      <a href="https://misolist.herokuapp.com/" target="_blank">
+                        Miso_list!
+                      </a>
+                      <span>
+                        A smart, auto-categorizing todo list app. The user
+                        simply has to add the name of the thing, and it gets put
+                        into the correct list.
+                      </span>
+                    </article>
+                  }
+                  imgsrc={miso}
                 />
               </Fade>
             </Col>
