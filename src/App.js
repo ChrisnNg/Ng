@@ -1,6 +1,7 @@
 import React from "react";
 import pfp from "./assets/pfp.png";
 import lhl from "./assets/lhl.jpg";
+import hobby from "./assets/hobby.jpg";
 
 import react from "./assets/react.png";
 import architecture from "./assets/architecture.png";
@@ -56,6 +57,7 @@ function App() {
                       </a>
                       <br />
                       Graduate of 2019
+                      <br />
                       <br />
                       <OverlayTrigger
                         key="react"
@@ -164,20 +166,7 @@ function App() {
             <Col sm={6}>
               <Fade bottom>
                 <Card
-                  title="title of card 2"
-                  text="On the other hand, we denounce with righteous indignation and dislike
-        men who are so beguiled and demoralized by the charms of pleasure of the
-        moment, so blinded by desire, that they cannot foresee the pain and"
-                  imgsrc={lhl}
-                />
-              </Fade>
-            </Col>
-          </Row>
-          <Row>
-            <Col sm={6}>
-              <Fade bottom>
-                <Card
-                  title="Hobbies"
+                  title="Raison D'être"
                   text={
                     <>
                       <span className="codes">
@@ -197,9 +186,12 @@ function App() {
                         <span className="last">{"}"}</span>
                       </span>
                       <br />
+                      <br />
                       <span>
-                        Other hobbies I enjoy include Chess, Boxing, Guitar, and
-                        League of Legends!
+                        My Raison D'être is to software engineer creative and
+                        unique solutions to problems. I am passionate about
+                        studying and consider myself a forever-student in the
+                        ways of coding.
                       </span>
                     </>
                   }
@@ -207,6 +199,35 @@ function App() {
                 />
               </Fade>
             </Col>
+          </Row>
+          <Row>
+            <Col sm={6}>
+              <Fade bottom>
+                <Card
+                  title="Hobbies"
+                  text={
+                    <>
+                      <span>
+                        Outside of coding, I enjoy chess, and traveling. Born
+                        and raised in Vancouver, some of the outside places I
+                        have seen include Las Vegas, Japan, Hong Kong, China,
+                        and Thailand.
+                      </span>
+                      <br />
+                      <br />
+                      <span>
+                        My favourite places are the British Columbia mountains-
+                        both in the warm summer days and winter wonderlands.
+                        That is the time when I go hiking in the heart of nature
+                        and snowboarding down the slops.
+                      </span>
+                    </>
+                  }
+                  imgsrc={hobby}
+                />
+              </Fade>
+            </Col>
+
             <Col sm={6}>
               <Fade bottom>
                 <Card
