@@ -15,3 +15,7 @@
   padding: 25px;
   background: linear-gradient( #0c1115,  #20242D); 
 }
+
+.copy-right {
+  color: grey;
+}

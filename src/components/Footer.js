@@ -5,8 +5,8 @@ const Footer = props => {
   return (
     <>
       <section className="codes footer">
-        <span ClassName="copy-right">
-          <i class="fas fa-copyright" />
+        <span className="copy-right">
+          <i className="fas fa-copyright" />
           &nbsp;Christopher Ng 2019
         </span>
         <div className="socialMediaIcons">

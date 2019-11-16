@@ -405,13 +405,8 @@ function App() {
           </Row>
         </Container>
       </section>
-
-      <Fade left>
-        <h2 />
-      </Fade>
-      <Fade right>
-        <Footer />
-      </Fade>
+      <h2 />
+      <Footer />
     </div>
   );
 }
