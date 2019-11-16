@@ -9,6 +9,7 @@ import { Row, Container, Col } from "react-bootstrap";
 import Landing from "./components/Landing.js";
 import Fade from "react-reveal/Fade";
 import coding from "./assets/coding.jpg";
+import Footer from "./components/Footer.js";
 
 function App() {
   return (
@@ -129,6 +130,7 @@ function App() {
           endures pains to avoid worse pains."
         </p>
       </article>
+      <Footer />
     </div>
   );
 }

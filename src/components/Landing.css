@@ -1,4 +1,4 @@
-section {
+#landing {
   background-image: url("../assets/planetside.png");
   /* credits @ https://www.reddit.com/r/Planetside/comments/ath0fn/the_sun_awakens_over_the_mountain_ranges/ */
   background-size:     100% 100%;                      /* <------ */
