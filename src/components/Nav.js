@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar } from "react-bootstrap";
 import "./Nav.css";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const Nav = () => {
   return (

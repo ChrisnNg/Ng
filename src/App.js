@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import pfp from "./assets/pfp.png";
 import lhl from "./assets/lhl.jpg";
 
@@ -45,7 +45,7 @@ function App() {
                         <b>Lighthouse Labs</b>
                       </a>
                       <br />
-                      <>Graduate of 2019</>
+                      Graduate of 2019
                       <br />
                       <OverlayTrigger
                         key="react"
@@ -57,7 +57,7 @@ function App() {
                           </Tooltip>
                         }
                       >
-                        <img src={react} />
+                        <img src={react} alt="react" />
                       </OverlayTrigger>
                       <OverlayTrigger
                         key="architecture"
@@ -69,7 +69,7 @@ function App() {
                           </Tooltip>
                         }
                       >
-                        <img src={architecture} />
+                        <img src={architecture} alt="architecture" />
                       </OverlayTrigger>
                       <OverlayTrigger
                         key="database"
@@ -81,7 +81,7 @@ function App() {
                           </Tooltip>
                         }
                       >
-                        <img src={db} />
+                        <img src={db} alt="db" />
                       </OverlayTrigger>
                       <OverlayTrigger
                         key="fundamentals"
@@ -93,7 +93,7 @@ function App() {
                           </Tooltip>
                         }
                       >
-                        <img src={fundamentals} />
+                        <img src={fundamentals} alt="fundamentals" />
                       </OverlayTrigger>
                       <OverlayTrigger
                         key="htmlcss"
@@ -105,7 +105,7 @@ function App() {
                           </Tooltip>
                         }
                       >
-                        <img src={htmlcss} />
+                        <img src={htmlcss} alt="htmlcss" />
                       </OverlayTrigger>
                       <OverlayTrigger
                         key="jsNode"
@@ -117,7 +117,7 @@ function App() {
                           </Tooltip>
                         }
                       >
-                        <img src={jsNode} />
+                        <img src={jsNode} alt="javascript and node" />
                       </OverlayTrigger>
                       <OverlayTrigger
                         key="ruby"
@@ -129,7 +129,7 @@ function App() {
                           </Tooltip>
                         }
                       >
-                        <img src={ruby} />
+                        <img src={ruby} alt="ruby" />
                       </OverlayTrigger>
                       <OverlayTrigger
                         key="test"
@@ -141,8 +141,10 @@ function App() {
                           </Tooltip>
                         }
                       >
-                        <img src={testing} />
+                        <img src={testing} alt="testing" />
                       </OverlayTrigger>
+                      <br />
+                      <span className="mini">Hover us!</span>
                     </>
                   }
                   imgsrc={lhl}
@@ -242,7 +244,9 @@ function App() {
           endures pains to avoid worse pains."
         </p>
       </article>
-      <Footer />
+      <Fade top>
+        <Footer />
+      </Fade>
     </div>
   );
 }
