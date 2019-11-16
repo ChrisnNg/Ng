@@ -46,3 +46,8 @@ h2 {
   width: 86%;
   display: block;
 }
+
+img {
+  width: 30px;
+  height: 30px;
+}

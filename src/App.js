@@ -1,6 +1,16 @@
 import React from "react";
 import pfp from "./assets/pfp.png";
 import lhl from "./assets/lhl.jpg";
+
+import react from "./assets/react.png";
+import architecture from "./assets/architecture.png";
+import db from "./assets/db.png";
+import fundamentals from "./assets/fundamentals.png";
+import htmlcss from "./assets/htmlcss.png";
+import jsNode from "./assets/jsNode.png";
+import ruby from "./assets/ruby.png";
+import testing from "./assets/testing.png";
+
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Nav";
@@ -28,9 +38,20 @@ function App() {
                   title="Education"
                   text={
                     <>
-                      <b>Lighthouse Labs</b>
+                      <a href="https://www.lighthouselabs.ca/web-bootcamp">
+                        <b>Lighthouse Labs</b>
+                      </a>
                       <br />
                       <>Graduate of 2019</>
+                      <br />
+                      <img src={react} />
+                      <img src={architecture} />
+                      <img src={db} />
+                      <img src={fundamentals} />
+                      <img src={htmlcss} />
+                      <img src={jsNode} />
+                      <img src={ruby} />
+                      <img src={testing} />
                     </>
                   }
                   imgsrc={lhl}
