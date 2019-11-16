@@ -39,7 +39,10 @@ function App() {
       </header>
       <Navbar />
       <section id="about">
-        <h2>About me!</h2>
+        <Fade right>
+          <h2>About me!</h2>
+        </Fade>
+
         <Container>
           <Row>
             <Col sm={6}>
@@ -227,7 +230,10 @@ function App() {
       </section>
 
       <section id="projects">
-        <h2>Projects</h2>
+        <Fade left>
+          <h2>Projects</h2>
+        </Fade>
+
         <Container>
           <Row>
             <Col sm={"auto"}>
@@ -258,7 +264,7 @@ function App() {
                     </a>
                   }
                   text={
-                    <article>
+                    <>
                       <a
                         href="https://vigorous-elion-2594d4.netlify.com/"
                         target="_blank"
@@ -270,7 +276,7 @@ function App() {
                         simply has to add the name of the thing, and it gets put
                         into the correct list.
                       </span>
-                    </article>
+                    </>
                   }
                   imgsrc={scheduler}
                 />
@@ -307,7 +313,7 @@ function App() {
                     </a>
                   }
                   text={
-                    <article>
+                    <>
                       <a href="https://misolist.herokuapp.com/" target="_blank">
                         Miso_list-
                       </a>
@@ -316,7 +322,7 @@ function App() {
                         simply has to add the name of the thing, and it gets put
                         into the correct list.
                       </span>
-                    </article>
+                    </>
                   }
                   imgsrc={miso}
                 />
@@ -359,6 +365,7 @@ function App() {
       </section>
 
       <Fade top>
+        <h2 />
         <Footer />
       </Fade>
     </div>

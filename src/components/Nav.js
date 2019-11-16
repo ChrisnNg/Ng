@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 const Nav = () => {
   return (
     <>
-      <Navbar variant="dark" sticky="top" className="navi">
+      <Navbar expand="lg" variant="dark" sticky="top" className="navi">
         <Link
           to="landing"
           activeClass="active"
@@ -22,6 +22,7 @@ const Nav = () => {
           spy={true}
           smooth={true}
           className="links"
+          offset={-50}
         >
           About
         </Link>
@@ -31,6 +32,7 @@ const Nav = () => {
           spy={true}
           smooth={true}
           className="links"
+          offset={-50}
         >
           Projects
         </Link>
