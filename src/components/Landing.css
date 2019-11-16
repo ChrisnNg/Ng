@@ -8,7 +8,7 @@
   font-family: 'Bebas Neue', cursive;
 }
 
-section article {
+.landing {
   position: relative;
   top: 40vh;
   margin-bottom: 0;

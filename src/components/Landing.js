@@ -6,7 +6,7 @@ const Landing = props => {
   return (
     <>
       <section id="landing">
-        <article>
+        <article className="landing">
           <Fade>
             <b>Hi, I'm Christopher Ng</b>
           </Fade>
