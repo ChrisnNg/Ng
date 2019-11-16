@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import pfp from "./assets/pfp.png";
 import lhl from "./assets/lhl.jpg";
 
@@ -21,7 +21,25 @@ import Fade from "react-reveal/Fade";
 import coding from "./assets/coding.jpg";
 import Footer from "./components/Footer.js";
 
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Button from "react-bootstrap/Button";
+
 function App() {
+  const renderTooltip = props => (
+    <div
+      {...props}
+      style={{
+        backgroundColor: "rgba(0, 0, 0, 0.85)",
+        padding: "2px 10px",
+        color: "white",
+        borderRadius: 3,
+        ...props.style
+      }}
+    >
+      {props.app}
+    </div>
+  );
+
   return (
     <div className="App">
       <header className="App-header">
@@ -44,14 +62,69 @@ function App() {
                       <br />
                       <>Graduate of 2019</>
                       <br />
-                      <img src={react} />
-                      <img src={architecture} />
-                      <img src={db} />
-                      <img src={fundamentals} />
-                      <img src={htmlcss} />
-                      <img src={jsNode} />
-                      <img src={ruby} />
-                      <img src={testing} />
+                      <OverlayTrigger
+                        placement="left"
+                        delay={{ show: 250, hide: 400 }}
+                        overlay={renderTooltip({ app: "React" })}
+                      >
+                        <img src={react} />
+                      </OverlayTrigger>
+                      <OverlayTrigger
+                        placement="bottom"
+                        delay={{ show: 250, hide: 400 }}
+                        overlay={renderTooltip({ app: "Architecture" })}
+                      >
+                        <img src={architecture} />
+                      </OverlayTrigger>
+                      <OverlayTrigger
+                        placement="bottom"
+                        delay={{ show: 250, hide: 400 }}
+                        overlay={renderTooltip({ app: "Database" })}
+                      >
+                        <img src={db} />
+                      </OverlayTrigger>
+                      <OverlayTrigger
+                        placement="bottom"
+                        delay={{ show: 250, hide: 400 }}
+                        overlay={renderTooltip({ app: "Fundamentals" })}
+                      >
+                        <img src={fundamentals} />
+                      </OverlayTrigger>
+                      <OverlayTrigger
+                        placement="bottom"
+                        delay={{ show: 250, hide: 400 }}
+                        overlay={renderTooltip({ app: "Html & CSS" })}
+                      >
+                        <img src={htmlcss} />
+                      </OverlayTrigger>
+                      <OverlayTrigger
+                        placement="bottom"
+                        delay={{ show: 250, hide: 400 }}
+                        overlay={renderTooltip({ app: "Javascript & Node.js" })}
+                      >
+                        <img src={jsNode} />
+                      </OverlayTrigger>
+                      <OverlayTrigger
+                        placement="bottom"
+                        delay={{ show: 250, hide: 400 }}
+                        overlay={renderTooltip({ app: "Ruby" })}
+                      >
+                        <img src={ruby} />
+                      </OverlayTrigger>
+                      <OverlayTrigger
+                        placement="bottom"
+                        delay={{ show: 250, hide: 400 }}
+                        overlay={renderTooltip({ app: "Javascript & Node.js" })}
+                      >
+                        <img src={jsNode} />
+                      </OverlayTrigger>
+                      <OverlayTrigger
+                        placement="right"
+                        delay={{ show: 250, hide: 400 }}
+                        overlay={renderTooltip({ app: "Testing" })}
+                      >
+                        <img src={testing} />
+                      </OverlayTrigger>
                     </>
                   }
                   imgsrc={lhl}
