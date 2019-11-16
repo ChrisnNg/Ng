@@ -230,7 +230,7 @@ function App() {
         <h2>Projects</h2>
         <Container>
           <Row>
-            <Col sm={4}>
+            <Col sm={"auto"}>
               <Fade bottom>
                 <Card
                   title={
@@ -246,7 +246,7 @@ function App() {
                 />
               </Fade>
             </Col>
-            <Col sm={4}>
+            <Col sm={"auto"}>
               <Fade bottom>
                 <Card
                   title={
@@ -276,7 +276,7 @@ function App() {
                 />
               </Fade>
             </Col>
-            <Col sm={4}>
+            <Col sm={"auto"}>
               <Fade bottom>
                 <Card
                   title={
@@ -295,7 +295,7 @@ function App() {
             </Col>
           </Row>
           <Row>
-            <Col sm={4}>
+            <Col sm={"auto"}>
               <Fade bottom>
                 <Card
                   title={
@@ -322,7 +322,7 @@ function App() {
                 />
               </Fade>
             </Col>
-            <Col sm={4}>
+            <Col sm={"auto"}>
               <Fade bottom>
                 <Card
                   title={
@@ -338,7 +338,7 @@ function App() {
                 />
               </Fade>
             </Col>
-            <Col sm={4}>
+            <Col sm={"auto"}>
               <Fade bottom>
                 <Card
                   title={
