@@ -1,11 +1,12 @@
 .App {
   font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right, #0c1115, #111619, #0e1316); 
 }
 
 .App-logo {
   height: 70%;
   width: 70%;
-}
+} 
 
 .App-header {
   text-align: center;

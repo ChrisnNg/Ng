@@ -1,10 +1,10 @@
 import React from "react";
 import { Navbar } from "react-bootstrap";
-
+import "./Nav.css";
 const Nav = () => {
   return (
     <>
-      <Navbar bg="dark" variant="dark" sticky="top">
+      <Navbar variant="dark" sticky="top">
         <Navbar.Brand href="#home">
           <img
             alt=""

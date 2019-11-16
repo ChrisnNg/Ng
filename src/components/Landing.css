@@ -1,5 +1,5 @@
 section {
-  background-image: url("../assets/2027.jpg"), linear-gradient(#eb01a5, #d13531);
+  background-image: url("../assets/planetside.png");
   background-size:     100% 100%;                      /* <------ */
   background-position: center center; 
   height: 100vh;
@@ -9,7 +9,7 @@ section {
 
 section article {
   position: relative;
-  top: 45vh;
+  top: 40vh;
   margin-bottom: 0;
   color: #508991;
 }
@@ -26,3 +26,27 @@ section article {
   position: relative;
   right: 30px;
 }
+
+HTML SCSSResult
+EDIT ON
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+html {
+    height: 2000px;
+    background-color: red;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/64/Creaci%C3%B3n_de_Ad%C3%A1n_%28Miguel_%C3%81ngel%29.jpg);
+    background-size: 100% auto;
+    background-position: top center;
+    background-attachment: fixed;
+    }
+
+body {
+    height: 100%;
+    background-image: linear-gradient(hsl(10,90,66), transparent 70%);
+    background-size: 100% 100%;
+    mix-blend-mode: difference;
+    }
