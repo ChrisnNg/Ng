@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import pfp from "./assets/pfp.png";
 import lhl from "./assets/lhl.jpg";
 import hobby from "./assets/hobby.jpg";
@@ -33,6 +33,9 @@ import tweeter from "./assets/tweeter.png";
 import lotide from "./assets/lotide.png";
 
 function App() {
+  useEffect(() => {
+    document.title = "Chris Ng";
+  }, []);
   return (
     <div className="App">
       <header className="App-header">
