@@ -37,3 +37,12 @@
 .shrink {
   font-size: 14px;
 }
+
+h2 {
+  color: whitesmoke;
+  margin-left: 7vw;
+  margin-right: 7vw;
+  border-bottom: 1px double whitesmoke;
+  width: 86%;
+  display: block;
+}
