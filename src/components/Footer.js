@@ -1,7 +1,4 @@
 import React from "react";
-import ig_icon from "../assets/insta-icon.png";
-import fb_icon from "../assets/fb-icon.png";
-import li_icon from "../assets/linked-icon.png";
 import "./Footer.css";
 
 const Footer = props => {
@@ -10,13 +7,19 @@ const Footer = props => {
       <section className="codes">
         <div className="socialMediaIcons">
           <a href="https://www.facebook.com/christopher.ng.5203?ref=bookmarks">
-            <img src={fb_icon} alt="Chris-fb" />
+            <i class="fab fa-facebook-square" />
           </a>
+
           <a href="https://www.linkedin.com/in/christopherkyleng/">
-            <img src={li_icon} alt="Chris-linkedin" />
+            <i class="fab fa-linkedin" />
           </a>
+
           <a href="https://www.instagram.com/cristopherng/">
-            <img src={ig_icon} alt="Chris-ig" />
+            <i class="fab fa-instagram" />
+          </a>
+
+          <a href="https://github.com/ChrisnNg">
+            <i class="fab fa-github-square" />
           </a>
         </div>
       </section>

@@ -1,8 +1,11 @@
-.socialMediaIcons img {
+.socialMediaIcons a {
   width: 60px;
-  transition: 0.5s;
+  color: #42526a;
+  margin: 3px;
 }
 
-.socialMediaIcons a:hover img {
+.socialMediaIcons a:hover i {
   transform: translateY(-10px);
+  transition: 0.5s;
+  color: #ffdee4;
 }
