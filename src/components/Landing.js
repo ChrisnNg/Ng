@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 const Landing = props => {
   return (
     <>
-      <section>
+      <section id="landing">
         <article>
           <Fade>
             <b>Hi, I'm Christopher Ng</b>

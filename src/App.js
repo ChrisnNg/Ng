@@ -18,7 +18,7 @@ function App() {
       </header>
       <Navbar />
       <article>
-        <h2>About me!</h2>
+        <h2 id="about">About me!</h2>
         <Container>
           <Row>
             <Col sm={6}>
