@@ -26,6 +26,7 @@ import Tooltip from "react-bootstrap/Tooltip";
 
 import jungle from "./assets/jungle_main.png";
 import miso from "./assets/miso_list_landing.png";
+import cat_park from "./assets/cat_park.png";
 
 function App() {
   return (
@@ -228,11 +229,16 @@ function App() {
             <Col sm={4}>
               <Fade bottom>
                 <Card
-                  title="title of card 2"
-                  text="On the other hand, we denounce with righteous indignation and dislike
-        men who are so beguiled and demoralized by the charms of pleasure of the
-        moment, so blinded by desire, that they cannot foresee the pain and"
-                  imgsrc={lhl}
+                  title={
+                    <a
+                      href="https://github.com/ChrisnNg/cat_park"
+                      target="_blank"
+                    >
+                      cat_park
+                    </a>
+                  }
+                  text="cat_park was created by Chris and Thomas (CaT) to solve the problems of finding parking in metro Vancouver. Included in this app are all the parking meters in Vancouver and a crime heatmap to see where it is safer to park relative to the area. This app was designed with mobile useage in mind and thus includes responsive UI. "
+                  imgsrc={cat_park}
                 />
               </Fade>
             </Col>
