@@ -9,7 +9,7 @@ const infoCard = props => {
         <Card.Img src={props.imgsrc} alt="card-image" />
         <Card.ImgOverlay>
           <Card.Title className="card-title">
-            <h3>{props.title}</h3>
+            <h1>{props.title}</h1>
           </Card.Title>
           <Card.Text className="card-text">{props.text}</Card.Text>
         </Card.ImgOverlay>

@@ -25,6 +25,7 @@ import Footer from "./components/Footer.js";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 
+import site from "./assets/planetside.png";
 import jungle from "./assets/jungle_main.png";
 import miso from "./assets/miso_list_landing.png";
 import cat_park from "./assets/cat_park.png";
@@ -277,6 +278,28 @@ function App() {
 
         <Container>
           <Row>
+            <Col sm={"auto"}>
+              <Fade bottom>
+                <Card
+                  title={
+                    <a href="https://github.com/ChrisnNg/Ng" target="_blank">
+                      My Portfolio Site
+                    </a>
+                  }
+                  text={
+                    <>
+                      This website you're current on!
+                      <br />
+                      Created the first week after my graduation from Lighthouse
+                      Labs, This site serves as the point of reference for
+                      future employers.
+                    </>
+                  }
+                  imgsrc={site}
+                />
+              </Fade>
+            </Col>
+
             <Col sm={"auto"}>
               <Fade bottom>
                 <Card
