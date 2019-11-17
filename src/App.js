@@ -336,9 +336,9 @@ function App() {
                         Scheduler-
                       </a>
                       <span>
-                        A smart, auto-categorizing todo list app. The user
-                        simply has to add the name of the thing, and it gets put
-                        into the correct list.
+                        A Single-paged application with a persistent database to
+                        help schedule interviews. Built with React.js and tested
+                        with Jest, Cypress, and Storybook.
                       </span>
                     </>
                   }
