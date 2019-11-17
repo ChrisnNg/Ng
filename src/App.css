@@ -32,6 +32,7 @@
 
 .codes {
   text-align: center;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .shrink {
@@ -48,8 +49,8 @@ h2 {
 }
 
 img {
-  width: 90px;
-  height: 90px;
+  width: 75px;
+  height: 75px;
 }
 
 a:link {
@@ -63,3 +64,10 @@ a:visited {
 a:hover {
   color: #fecee2 !important;
 }
+
+@media only screen and (max-width: 405px) {
+  .overflow {
+    visibility: hidden;
+  }
+}
+

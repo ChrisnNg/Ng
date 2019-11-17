@@ -25,7 +25,7 @@
   opacity: 0;
   transition: visibility 0s linear 300ms, opacity 300ms;
   position: relative;
-  top: 10%;
+  top: 0%;
   font-size: 20px;
   color: #d13531;
   -o-transition:.5s;
@@ -58,7 +58,7 @@ img.card-img {
   -moz-transition:.5s;
   -webkit-transition:.5s;
   transition:.5s;
-  top: 10%;
+  top: 3%;
   transform: translateY(-30%);
 
 }

@@ -189,12 +189,11 @@ function App() {
                         <span className="last">{"}"}</span>
                       </span>
                       <br />
-                      <br />
                       <span>
                         My Raison D'être is to software engineer creative and
                         unique solutions to problems. I am passionate about
-                        studying and consider myself a forever-student in the
-                        ways of coding.
+                        studying and consider myself a forever-student in
+                        coding.
                       </span>
                     </>
                   }
@@ -212,13 +211,13 @@ function App() {
                     <>
                       <span>
                         Outside of coding, I enjoy chess, and traveling. Born
-                        and raised in Vancouver, some of the outside places I
-                        have seen include Las Vegas, Japan, Hong Kong, China,
-                        and Thailand.
+                        and raised in Vancouver, some of the most memorable
+                        places I have seen include Las Vegas, Japan, Hong Kong,
+                        China, and Thailand.
                       </span>
                       <br />
                       <br />
-                      <span>
+                      <span className="overflow">
                         My favourite places are the British Columbia mountains-
                         both in the warm summer days and winter wonderlands.
                         That is the time when I go hiking in the heart of nature
@@ -289,7 +288,7 @@ function App() {
                       cat_park
                     </a>
                   }
-                  text="cat_park was created by Chris and Thomas (CaT) to solve the problems of finding parking in metro Vancouver. Included in this app are all the parking meters in Vancouver and a crime heatmap to see where it is safer to park relative to the area. This app was designed with mobile useage in mind and thus includes responsive UI. "
+                  text="cat_park was created by Chris and Thomas (CaT) to solve the problems of finding parking in metro Vancouver. Included in this app are all the parking meters in Vancouver and a crime heatmap to see where it is safer to park relative to the area. "
                   imgsrc={cat_park}
                 />
               </Fade>
