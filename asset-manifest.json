@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Ng/static/css/main.03e58ed5.chunk.css",
-    "main.js": "/Ng/static/js/main.5f8b155a.chunk.js",
-    "main.js.map": "/Ng/static/js/main.5f8b155a.chunk.js.map",
+    "main.css": "/Ng/static/css/main.2c306fb7.chunk.css",
+    "main.js": "/Ng/static/js/main.a8dc61ee.chunk.js",
+    "main.js.map": "/Ng/static/js/main.a8dc61ee.chunk.js.map",
     "runtime-main.js": "/Ng/static/js/runtime-main.457c582a.js",
     "runtime-main.js.map": "/Ng/static/js/runtime-main.457c582a.js.map",
     "static/css/2.b0bb7f2c.chunk.css": "/Ng/static/css/2.b0bb7f2c.chunk.css",
-    "static/js/2.f2e3bbc6.chunk.js": "/Ng/static/js/2.f2e3bbc6.chunk.js",
-    "static/js/2.f2e3bbc6.chunk.js.map": "/Ng/static/js/2.f2e3bbc6.chunk.js.map",
+    "static/js/2.034ea393.chunk.js": "/Ng/static/js/2.034ea393.chunk.js",
+    "static/js/2.034ea393.chunk.js.map": "/Ng/static/js/2.034ea393.chunk.js.map",
     "index.html": "/Ng/index.html",
-    "precache-manifest.3eaff8c3d14e63ee5a74eb22ca881ed4.js": "/Ng/precache-manifest.3eaff8c3d14e63ee5a74eb22ca881ed4.js",
+    "precache-manifest.f4e62db4c6ddc422619409d3b038b526.js": "/Ng/precache-manifest.f4e62db4c6ddc422619409d3b038b526.js",
     "service-worker.js": "/Ng/service-worker.js",
     "static/css/2.b0bb7f2c.chunk.css.map": "/Ng/static/css/2.b0bb7f2c.chunk.css.map",
-    "static/css/main.03e58ed5.chunk.css.map": "/Ng/static/css/main.03e58ed5.chunk.css.map",
+    "static/css/main.2c306fb7.chunk.css.map": "/Ng/static/css/main.2c306fb7.chunk.css.map",
     "static/media/cat_park.png": "/Ng/static/media/cat_park.7ff3400e.png",
     "static/media/coding.jpg": "/Ng/static/media/coding.0a9d18a2.jpg",
     "static/media/db.png": "/Ng/static/media/db.5498c7a1.png",
@@ -28,13 +28,14 @@
     "static/media/react.png": "/Ng/static/media/react.5632b800.png",
     "static/media/ruby.png": "/Ng/static/media/ruby.af8d029a.png",
     "static/media/scheduler.gif": "/Ng/static/media/scheduler.e6d56686.gif",
+    "static/media/tinyapp.png": "/Ng/static/media/tinyapp.aa027918.png",
     "static/media/tweeter.png": "/Ng/static/media/tweeter.77e1925b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.457c582a.js",
     "static/css/2.b0bb7f2c.chunk.css",
-    "static/js/2.f2e3bbc6.chunk.js",
-    "static/css/main.03e58ed5.chunk.css",
-    "static/js/main.5f8b155a.chunk.js"
+    "static/js/2.034ea393.chunk.js",
+    "static/css/main.2c306fb7.chunk.css",
+    "static/js/main.a8dc61ee.chunk.js"
   ]
 }
