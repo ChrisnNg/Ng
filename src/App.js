@@ -32,6 +32,7 @@ import cat_park from "./assets/cat_park.png";
 import scheduler from "./assets/scheduler.gif";
 import tweeter from "./assets/tweeter.png";
 import lotide from "./assets/lotide.png";
+import tinyapp from "./assets/tinyapp.png";
 
 function App() {
   useEffect(() => {
@@ -422,6 +423,22 @@ function App() {
                   }
                   text="A mini clone of the Lodash library. BEWARE: This library was published for learning purposes. It is not intended for use in production-grade software. This project was created and published by me as part of my learnings at Lighthouse Labs."
                   imgsrc={lotide}
+                />
+              </Fade>
+            </Col>
+            <Col sm={"auto"}>
+              <Fade bottom>
+                <Card
+                  title={
+                    <a
+                      href="https://github.com/ChrisnNg/tinyapp"
+                      target="_blank"
+                    >
+                      Tinyapp
+                    </a>
+                  }
+                  text="TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly)."
+                  imgsrc={tinyapp}
                 />
               </Fade>
             </Col>
