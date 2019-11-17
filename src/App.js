@@ -361,7 +361,8 @@ function App() {
                       <span>
                         A smart, auto-categorizing todo list app. The user
                         simply has to add the name of the thing, and it gets put
-                        into the correct list.
+                        into the correct list. Created as the product of my
+                        first group project.
                       </span>
                     </>
                   }
