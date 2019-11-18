@@ -365,16 +365,17 @@ function App() {
                   }
                   text={
                     <>
-                      <a
-                        href="https://vigorous-elion-2594d4.netlify.com/"
-                        target="_blank"
-                      >
-                        Scheduler-
-                      </a>
                       <span>
                         A Single-paged application with a persistent database to
                         help schedule interviews. Built with React.js and tested
-                        with Jest, Cypress, and Storybook.
+                        with Jest, Cypress, and Storybook. Hosted{" "}
+                        <a
+                          href="https://vigorous-elion-2594d4.netlify.com/"
+                          target="_blank"
+                        >
+                          Here
+                        </a>
+                        &nbsp; on Netlify, and database hosted on Heroku.
                       </span>
                     </>
                   }
@@ -414,14 +415,18 @@ function App() {
                   }
                   text={
                     <>
-                      <a href="https://misolist.herokuapp.com/" target="_blank">
-                        Miso_list-
-                      </a>
                       <span>
                         A smart, auto-categorizing todo list app. The user
-                        simply has to add the name of the thing, and it gets put
-                        into the correct list. Created as the product of my
-                        first group project.
+                        simply has to add the content, and it gets put into the
+                        correct list. Created as the product of my first group
+                        project. Hosted{" "}
+                        <a
+                          href="https://misolist.herokuapp.com/"
+                          target="_blank"
+                        >
+                          Here
+                        </a>
+                        &nbsp; on Heroku.
                       </span>
                     </>
                   }
