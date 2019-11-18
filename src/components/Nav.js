@@ -27,6 +27,16 @@ const Nav = () => {
           About
         </Link>
         <Link
+          to="publications"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          className="links"
+          offset={-50}
+        >
+          Publications
+        </Link>
+        <Link
           to="projects"
           activeClass="active"
           spy={true}
