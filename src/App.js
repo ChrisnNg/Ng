@@ -33,6 +33,7 @@ import scheduler from "./assets/scheduler.gif";
 import tweeter from "./assets/tweeter.png";
 import lotide from "./assets/lotide.png";
 import tinyapp from "./assets/tinyapp.png";
+import stackdata from "./assets/stackdata.jpeg";
 
 function App() {
   useEffect(() => {
@@ -265,6 +266,40 @@ function App() {
                     </>
                   }
                   imgsrc={pfp}
+                />
+              </Fade>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      <section id="publications">
+        <Fade left>
+          <h2>Publications</h2>
+        </Fade>
+        <Container>
+          <Row>
+            <Col sm={"auto"}>
+              <Fade left>
+                <Card
+                  title={
+                    <a
+                      href="https://medium.com/@cristopherng/javascript-the-stack-data-structure-54d5d2e1905b"
+                      target="_blank"
+                    >
+                      Javascript: The Stack Data Structure
+                    </a>
+                  }
+                  text={
+                    <>
+                      Published on Medium!
+                      <br />
+                      This article was written during my time at Lighthouse
+                      Labs, and serves to explain how the event loop feeds into
+                      the call stack.
+                    </>
+                  }
+                  imgsrc={stackdata}
                 />
               </Fade>
             </Col>
