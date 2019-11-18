@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6ff8ec0df0bd1b0197bc312eb369796d",
+    "revision": "983c40c5e309bd18a7e596a372e6005a",
     "url": "/Ng/index.html"
   },
   {
-    "revision": "3e084356670a54811b00",
+    "revision": "18ca7b3114a0bea438f9",
     "url": "/Ng/static/css/2.b0bb7f2c.chunk.css"
   },
   {
-    "revision": "ffcadbd99ac224bbd108",
+    "revision": "59d786b1deeae2cf4e68",
     "url": "/Ng/static/css/main.2c306fb7.chunk.css"
   },
   {
-    "revision": "3e084356670a54811b00",
-    "url": "/Ng/static/js/2.034ea393.chunk.js"
+    "revision": "18ca7b3114a0bea438f9",
+    "url": "/Ng/static/js/2.393e93e9.chunk.js"
   },
   {
-    "revision": "ffcadbd99ac224bbd108",
-    "url": "/Ng/static/js/main.42d5aaa8.chunk.js"
+    "revision": "59d786b1deeae2cf4e68",
+    "url": "/Ng/static/js/main.43c14b7c.chunk.js"
   },
   {
     "revision": "ab65c5a9d90e348963b5",
@@ -82,6 +82,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e6d56686a5fab10acdca5319ae3ba8e1",
     "url": "/Ng/static/media/scheduler.e6d56686.gif"
+  },
+  {
+    "revision": "24bd911a4992d78cd72b26c2ddc59007",
+    "url": "/Ng/static/media/stackdata.24bd911a.jpeg"
   },
   {
     "revision": "aa0279184247aa79fbc2a9b50d2d87ed",
