@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import pfp from "./assets/pfp.png";
 import lhl from "./assets/lhl.jpg";
 import hobby from "./assets/hobby.jpg";
@@ -36,6 +36,59 @@ import tinyapp from "./assets/tinyapp.png";
 import stackdata from "./assets/stackdata.jpeg";
 
 function App() {
+  const [test, setTest] = useState("test");
+
+  function createCards(arrayOfCards) {
+    const allCards = [];
+    arrayOfCards.map(card => {
+      console.log("function activated");
+      allCards.push(
+        <Col sm={"auto"}>
+          <Fade bottom>
+            <Card title={card.title} text={card.text} imgsrc={card.imgsrc} />
+          </Fade>
+        </Col>
+      );
+    });
+    return allCards;
+  }
+
+  let projects = [
+    {
+      title: (
+        <a href="https://github.com/ChrisnNg/Ng" target="_blank">
+          My Portfolio Site
+        </a>
+      ),
+      text: (
+        <>
+          This website you're current on!
+          <br />
+          Created the first week after my graduation from Lighthouse Labs, This
+          site serves as the point of reference for future employers.
+        </>
+      ),
+      imgsrc: site
+    },
+    {
+      title: (
+        <a href="https://github.com/ChrisnNg/cat_park" target="_blank">
+          cat_park
+        </a>
+      ),
+      text: (
+        <>
+          If you can't park, use cat_park! This project was created by Chris and
+          Thomas (CaT) to solve the problems of finding parking in metro
+          Vancouver. Included in this app are all the parking meters in
+          Vancouver and a crime heatmap to see where it is safer to park
+          relative to the area.
+        </>
+      ),
+      imgsrc: cat_park
+    }
+  ];
+
   useEffect(() => {
     document.title = "Chris Ng";
   }, []);
@@ -314,6 +367,8 @@ function App() {
 
         <Container>
           <Row>
+            {createCards(projects)}
+            {/*             
             <Col sm={"auto"}>
               <Fade bottom>
                 <Card
@@ -334,7 +389,8 @@ function App() {
                   imgsrc={site}
                 />
               </Fade>
-            </Col>
+            </Col> 
+            */}
 
             <Col sm={"auto"}>
               <Fade bottom>
