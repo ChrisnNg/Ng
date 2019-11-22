@@ -86,6 +86,66 @@ function App() {
         </>
       ),
       imgsrc: cat_park
+    },
+    {
+      title: (
+        <a href="https://github.com/ChrisnNg/scheduler" target="_blank">
+          Scheduler
+        </a>
+      ),
+      text: (
+        <>
+          <span>
+            A Single-paged application with a persistent database to help
+            schedule interviews. Built with React.js and tested with Jest,
+            Cypress, and Storybook. Hosted{" "}
+            <a
+              href="https://vigorous-elion-2594d4.netlify.com/"
+              target="_blank"
+            >
+              Here
+            </a>
+            &nbsp; on Netlify, and database hosted on Heroku.
+          </span>
+        </>
+      ),
+      imgsrc: scheduler
+    },
+    {
+      title: (
+        <a href="https://github.com/ChrisnNg/jungle-rails" target="_blank">
+          Jungle
+        </a>
+      ),
+      text: (
+        <>
+          A mini e-commerce application built with Rails 4.2 for purposes of
+          teaching Rails by example. As a student, I have used this application
+          to solve bugs and implement tickets VIA ticket-style.
+        </>
+      ),
+      imgsrc: jungle
+    },
+    {
+      title: (
+        <a href="https://github.com/ChrisnNg/miso_list" target="_blank">
+          miso_list
+        </a>
+      ),
+      text: (
+        <>
+          <span>
+            A smart, auto-categorizing todo list app. The user simply has to add
+            the content, and it gets put into the correct list. Created as the
+            product of my first group project. Hosted{" "}
+            <a href="https://misolist.herokuapp.com/" target="_blank">
+              Here
+            </a>
+            &nbsp; on Heroku.
+          </span>
+        </>
+      ),
+      imgsrc: miso
     }
   ];
 
@@ -366,130 +426,8 @@ function App() {
         </Fade>
 
         <Container>
+          <Row>{createCards(projects)}</Row>
           <Row>
-            {createCards(projects)}
-            {/*             
-            <Col sm={"auto"}>
-              <Fade bottom>
-                <Card
-                  title={
-                    <a href="https://github.com/ChrisnNg/Ng" target="_blank">
-                      My Portfolio Site
-                    </a>
-                  }
-                  text={
-                    <>
-                      This website you're current on!
-                      <br />
-                      Created the first week after my graduation from Lighthouse
-                      Labs, This site serves as the point of reference for
-                      future employers.
-                    </>
-                  }
-                  imgsrc={site}
-                />
-              </Fade>
-            </Col> 
-            */}
-
-            <Col sm={"auto"}>
-              <Fade bottom>
-                <Card
-                  title={
-                    <a
-                      href="https://github.com/ChrisnNg/cat_park"
-                      target="_blank"
-                    >
-                      cat_park
-                    </a>
-                  }
-                  text="If you can't park, use cat_park! This project was created by Chris and Thomas (CaT) to solve the problems of finding parking in metro Vancouver. Included in this app are all the parking meters in Vancouver and a crime heatmap to see where it is safer to park relative to the area. "
-                  imgsrc={cat_park}
-                />
-              </Fade>
-            </Col>
-            <Col sm={"auto"}>
-              <Fade bottom>
-                <Card
-                  title={
-                    <a
-                      href="https://github.com/ChrisnNg/scheduler"
-                      target="_blank"
-                    >
-                      Scheduler
-                    </a>
-                  }
-                  text={
-                    <>
-                      <span>
-                        A Single-paged application with a persistent database to
-                        help schedule interviews. Built with React.js and tested
-                        with Jest, Cypress, and Storybook. Hosted{" "}
-                        <a
-                          href="https://vigorous-elion-2594d4.netlify.com/"
-                          target="_blank"
-                        >
-                          Here
-                        </a>
-                        &nbsp; on Netlify, and database hosted on Heroku.
-                      </span>
-                    </>
-                  }
-                  imgsrc={scheduler}
-                />
-              </Fade>
-            </Col>
-            <Col sm={"auto"}>
-              <Fade bottom>
-                <Card
-                  title={
-                    <a
-                      href="https://github.com/ChrisnNg/jungle-rails"
-                      target="_blank"
-                    >
-                      Jungle
-                    </a>
-                  }
-                  text="A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
-                  As a student, I have used this application to solve bugs and implement tickets VIA ticket-style."
-                  imgsrc={jungle}
-                />
-              </Fade>
-            </Col>
-          </Row>
-          <Row>
-            <Col sm={"auto"}>
-              <Fade bottom>
-                <Card
-                  title={
-                    <a
-                      href="https://github.com/ChrisnNg/miso_list"
-                      target="_blank"
-                    >
-                      miso_list
-                    </a>
-                  }
-                  text={
-                    <>
-                      <span>
-                        A smart, auto-categorizing todo list app. The user
-                        simply has to add the content, and it gets put into the
-                        correct list. Created as the product of my first group
-                        project. Hosted{" "}
-                        <a
-                          href="https://misolist.herokuapp.com/"
-                          target="_blank"
-                        >
-                          Here
-                        </a>
-                        &nbsp; on Heroku.
-                      </span>
-                    </>
-                  }
-                  imgsrc={miso}
-                />
-              </Fade>
-            </Col>
             <Col sm={"auto"}>
               <Fade bottom>
                 <Card
