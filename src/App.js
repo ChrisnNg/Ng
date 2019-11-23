@@ -193,7 +193,7 @@ function App() {
         </>
       ),
       imgsrc: tweeter,
-      footer: ["Javascript", "HTML", "CSS", "Ajax"]
+      footer: ["Javascript", "HTML", "CSS", "Ajax", "Express", "Jquery"]
     },
     {
       title: (
@@ -204,13 +204,13 @@ function App() {
       text: (
         <>
           A mini clone of the Lodash library. BEWARE: This library was published
-          for learning purposes. It is not intended for use in production-grade
-          software. This project was created and published by me as part of my
-          learnings at Lighthouse Labs.
+          for learning purposes. Tested with Mocha and Chai. It is not intended
+          for use in production-grade software. This project was created and
+          published by me as part of my learnings at Lighthouse Labs.
         </>
       ),
       imgsrc: lotide,
-      footer: ["Javascript"]
+      footer: ["Javascript", "Mocha", "Chai"]
     },
     {
       title: (
@@ -223,11 +223,11 @@ function App() {
           TinyApp is a full stack web application built with Node and Express
           that allows users to shorten long URLs (à la bit.ly). Fully features
           user account creation and user specific links and encypts account
-          information with bcrypt.
+          information with bcrypt. Tested with Mocha and Chai.
         </>
       ),
       imgsrc: tinyapp,
-      footer: ["Javascript", "HTML", "CSS", "Express"]
+      footer: ["Javascript", "HTML", "CSS", "Express", "Mocha", "Chai"]
     }
   ];
 
