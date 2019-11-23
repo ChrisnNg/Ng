@@ -75,7 +75,7 @@ function App() {
         </>
       ),
       imgsrc: site,
-      footer: ["Javascript", "ReactJS", "Bootstrap", "Jquery"]
+      footer: ["Javascript", "HTML", "CSS", "ReactJS", "Bootstrap", "Jquery"]
     },
     {
       title: (
@@ -128,7 +128,16 @@ function App() {
         </>
       ),
       imgsrc: scheduler,
-      footer: ["Javascript", "ReactJS", "Storybook", "Jest", "Cypress"]
+      footer: [
+        "Javascript",
+        "HTML",
+        "CSS",
+        "ReactJS",
+        "Axios",
+        "Storybook",
+        "Jest",
+        "Cypress"
+      ]
     },
     {
       title: (
@@ -144,7 +153,7 @@ function App() {
         </>
       ),
       imgsrc: jungle,
-      footer: ["Rails", "Ruby on Rails", "Postgres"]
+      footer: ["Rails", "Ruby on Rails", "Postgres", "Capybara", "Poltergeist"]
     },
     {
       title: (
@@ -168,7 +177,7 @@ function App() {
         </>
       ),
       imgsrc: miso,
-      footer: ["Javascript", "HTML", "CSS"]
+      footer: ["Javascript", "HTML", "CSS", "Express", "Postgres"]
     },
     {
       title: (
@@ -212,11 +221,13 @@ function App() {
       text: (
         <>
           TinyApp is a full stack web application built with Node and Express
-          that allows users to shorten long URLs (à la bit.ly).
+          that allows users to shorten long URLs (à la bit.ly). Fully features
+          user account creation and user specific links and encypts account
+          information with bcrypt.
         </>
       ),
       imgsrc: tinyapp,
-      footer: ["Javascript", "HTML", "CSS"]
+      footer: ["Javascript", "HTML", "CSS", "Express"]
     }
   ];
 
