@@ -14,10 +14,14 @@ const infoCard = props => {
           <Card.Text className="card-text">
             {props.text}
             <br />
-            <small className="text-muted">{props.stack}</small>
+            <small className="text-muted">{props.footer}</small>
           </Card.Text>
         </Card.ImgOverlay>
-        <Card.Footer>footer</Card.Footer>
+        {props.footer ? (
+          <Card.Footer className="text-muted">{props.footer}</Card.Footer>
+        ) : (
+          false
+        )}
       </Card>
     </>
   );

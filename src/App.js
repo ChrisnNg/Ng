@@ -39,9 +39,9 @@ function App() {
   function createCards(arrayOfCards) {
     const allCards = [];
     arrayOfCards.map(card => {
-      if (card.stack) {
-        card.stack = card.stack.join(" ");
-      } else card["stack"] = [];
+      if (card.footer) {
+        card.footer = card.footer.join(" ");
+      } else card["footer"] = null;
 
       allCards.push(
         <Col sm={"auto"}>
@@ -50,7 +50,7 @@ function App() {
               title={card.title}
               text={card.text}
               imgsrc={card.imgsrc}
-              stack={card.stack}
+              footer={card.footer}
             />
           </Fade>
         </Col>
@@ -75,7 +75,7 @@ function App() {
         </>
       ),
       imgsrc: site,
-      stack: ["React", "Bootstrap", "Jquery"]
+      footer: ["React", "Bootstrap", "Jquery"]
     },
     {
       title: (
