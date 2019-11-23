@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import pfp from "./assets/pfp.png";
 import lhl from "./assets/lhl.jpg";
 import hobby from "./assets/hobby.jpg";
@@ -36,16 +36,22 @@ import tinyapp from "./assets/tinyapp.png";
 import stackdata from "./assets/stackdata.jpeg";
 
 function App() {
-  const [test, setTest] = useState("test");
-
   function createCards(arrayOfCards) {
     const allCards = [];
     arrayOfCards.map(card => {
-      console.log("function activated");
+      if (card.stack) {
+        card.stack = card.stack.join(" ");
+      } else card["stack"] = [];
+
       allCards.push(
         <Col sm={"auto"}>
           <Fade bottom>
-            <Card title={card.title} text={card.text} imgsrc={card.imgsrc} />
+            <Card
+              title={card.title}
+              text={card.text}
+              imgsrc={card.imgsrc}
+              stack={card.stack}
+            />
           </Fade>
         </Col>
       );
@@ -68,7 +74,8 @@ function App() {
           site serves as the point of reference for future employers.
         </>
       ),
-      imgsrc: site
+      imgsrc: site,
+      stack: ["React", "Bootstrap", "Jquery"]
     },
     {
       title: (
@@ -472,7 +479,6 @@ function App() {
 
         <Container>
           <Row>{createCards(projects)}</Row>
-          <Row></Row>
         </Container>
       </section>
       <h2 />

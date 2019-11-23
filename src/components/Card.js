@@ -11,8 +11,13 @@ const infoCard = props => {
           <Card.Title className="card-title">
             <h1>{props.title}</h1>
           </Card.Title>
-          <Card.Text className="card-text">{props.text}</Card.Text>
+          <Card.Text className="card-text">
+            {props.text}
+            <br />
+            <small className="text-muted">{props.stack}</small>
+          </Card.Text>
         </Card.ImgOverlay>
+        <Card.Footer>footer</Card.Footer>
       </Card>
     </>
   );
