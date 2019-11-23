@@ -11,11 +11,7 @@ const infoCard = props => {
           <Card.Title className="card-title">
             <h1>{props.title}</h1>
           </Card.Title>
-          <Card.Text className="card-text">
-            {props.text}
-            <br />
-            <small className="text-muted">{props.footer}</small>
-          </Card.Text>
+          <Card.Text className="card-text">{props.text}</Card.Text>
         </Card.ImgOverlay>
         {props.footer ? (
           <Card.Footer className="text-muted">{props.footer}</Card.Footer>

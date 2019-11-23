@@ -75,7 +75,7 @@ function App() {
         </>
       ),
       imgsrc: site,
-      footer: ["React", "Bootstrap", "Jquery"]
+      footer: ["Javascript", "ReactJS", "Bootstrap", "Jquery"]
     },
     {
       title: (
@@ -92,7 +92,16 @@ function App() {
           relative to the area.
         </>
       ),
-      imgsrc: cat_park
+      imgsrc: cat_park,
+      footer: [
+        "Javascript",
+        "ReactJS",
+        "Golang",
+        "React-Bootstrap",
+        "Material-UI",
+        "Axios",
+        "Postgres with PostGIS"
+      ]
     },
     {
       title: (
@@ -105,7 +114,9 @@ function App() {
           <span>
             A Single-paged application with a persistent database to help
             schedule interviews. Built with React.js and tested with Jest,
-            Cypress, and Storybook. Hosted{" "}
+            Cypress, and Storybook.
+            <br />
+            Hosted{" "}
             <a
               href="https://vigorous-elion-2594d4.netlify.com/"
               target="_blank"
@@ -116,7 +127,8 @@ function App() {
           </span>
         </>
       ),
-      imgsrc: scheduler
+      imgsrc: scheduler,
+      footer: ["Javascript", "ReactJS", "Storybook", "Jest", "Cypress"]
     },
     {
       title: (
@@ -131,7 +143,8 @@ function App() {
           to solve bugs and implement tickets VIA ticket-style.
         </>
       ),
-      imgsrc: jungle
+      imgsrc: jungle,
+      footer: ["Rails", "Ruby on Rails", "Postgres"]
     },
     {
       title: (
@@ -144,7 +157,9 @@ function App() {
           <span>
             A smart, auto-categorizing todo list app. The user simply has to add
             the content, and it gets put into the correct list. Created as the
-            product of my first group project. Hosted{" "}
+            product of my first group project.
+            <br />
+            Hosted{" "}
             <a href="https://misolist.herokuapp.com/" target="_blank">
               Here
             </a>
@@ -152,7 +167,8 @@ function App() {
           </span>
         </>
       ),
-      imgsrc: miso
+      imgsrc: miso,
+      footer: ["Javascript", "HTML", "CSS"]
     },
     {
       title: (
@@ -167,7 +183,8 @@ function App() {
           Node, Express and MongoDB back-end skills
         </>
       ),
-      imgsrc: tweeter
+      imgsrc: tweeter,
+      footer: ["Javascript", "HTML", "CSS", "Ajax"]
     },
     {
       title: (
@@ -183,7 +200,8 @@ function App() {
           learnings at Lighthouse Labs.
         </>
       ),
-      imgsrc: lotide
+      imgsrc: lotide,
+      footer: ["Javascript"]
     },
     {
       title: (
@@ -197,7 +215,8 @@ function App() {
           that allows users to shorten long URLs (à la bit.ly).
         </>
       ),
-      imgsrc: tinyapp
+      imgsrc: tinyapp,
+      footer: ["Javascript", "HTML", "CSS"]
     }
   ];
 
@@ -478,6 +497,7 @@ function App() {
         </Fade>
 
         <Container>
+          {projects.length}
           <Row>{createCards(projects)}</Row>
         </Container>
       </section>
