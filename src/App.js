@@ -16,7 +16,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Nav";
 import Card from "./components/Card";
-import { Row, Container, Col } from "react-bootstrap";
+import { Row, Container, Col, ProgressBar } from "react-bootstrap";
 import Landing from "./components/Landing.js";
 import Fade from "react-reveal/Fade";
 import coding from "./assets/coding.jpg";
@@ -508,6 +508,11 @@ function App() {
         </Fade>
 
         <Container>
+          <ProgressBar
+            animated
+            now={(projects.length / projects.length) * 100}
+            label={`${(projects.length / projects.length) * 100}%`}
+          />
           {projects.length}
           <Row>{createCards(projects)}</Row>
         </Container>
