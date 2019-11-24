@@ -335,6 +335,12 @@ function App() {
           Tweeter is a simple, single-page Twitter clone. This was built to
           practice my HTML, CSS, JS, jQuery and AJAX front-end skills, and my
           Node, Express and MongoDB back-end skills
+          <br />
+          Hosted{" "}
+          <a href="https://tweeter-chris.herokuapp.com/" target="_blank">
+            Here
+          </a>
+          &nbsp; on Heroku.
         </>
       ),
       imgsrc: tweeter,
@@ -369,6 +375,12 @@ function App() {
           that allows users to shorten long URLs (à la bit.ly). Fully features
           user account creation and user specific links and encypts account
           information with bcrypt. Tested with Mocha and Chai.
+          <br />
+          Hosted{" "}
+          <a href="https://tiny-app-chris.herokuapp.com/login" target="_blank">
+            Here
+          </a>
+          &nbsp; on Heroku.
         </>
       ),
       imgsrc: tinyapp,
