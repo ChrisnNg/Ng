@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Ng/static/css/main.8da8aeb2.chunk.css",
+    "main.css": "/Ng/static/css/main.f8311bfb.chunk.css",
     "main.js": "/Ng/static/js/main.35b1963f.chunk.js",
     "main.js.map": "/Ng/static/js/main.35b1963f.chunk.js.map",
     "runtime-main.js": "/Ng/static/js/runtime-main.457c582a.js",
@@ -9,10 +9,10 @@
     "static/js/2.268b7d97.chunk.js": "/Ng/static/js/2.268b7d97.chunk.js",
     "static/js/2.268b7d97.chunk.js.map": "/Ng/static/js/2.268b7d97.chunk.js.map",
     "index.html": "/Ng/index.html",
-    "precache-manifest.845b8e26eaf4483bde5692eaf8fed1dc.js": "/Ng/precache-manifest.845b8e26eaf4483bde5692eaf8fed1dc.js",
+    "precache-manifest.1513de04c14edf5ff6c3a34a85f9f0cd.js": "/Ng/precache-manifest.1513de04c14edf5ff6c3a34a85f9f0cd.js",
     "service-worker.js": "/Ng/service-worker.js",
     "static/css/2.b0bb7f2c.chunk.css.map": "/Ng/static/css/2.b0bb7f2c.chunk.css.map",
-    "static/css/main.8da8aeb2.chunk.css.map": "/Ng/static/css/main.8da8aeb2.chunk.css.map",
+    "static/css/main.f8311bfb.chunk.css.map": "/Ng/static/css/main.f8311bfb.chunk.css.map",
     "static/media/cat_park.png": "/Ng/static/media/cat_park.7ff3400e.png",
     "static/media/coding.jpg": "/Ng/static/media/coding.0a9d18a2.jpg",
     "static/media/db.png": "/Ng/static/media/db.5498c7a1.png",
@@ -36,7 +36,7 @@
     "static/js/runtime-main.457c582a.js",
     "static/css/2.b0bb7f2c.chunk.css",
     "static/js/2.268b7d97.chunk.js",
-    "static/css/main.8da8aeb2.chunk.css",
+    "static/css/main.f8311bfb.chunk.css",
     "static/js/main.35b1963f.chunk.js"
   ]
 }
