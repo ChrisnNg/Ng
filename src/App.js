@@ -87,10 +87,16 @@ function App() {
         />
         <ProgressBar
           animated
-          variant={"info"}
+          variant={"primary"}
           now={(stackCount["Express"] / projects.length) * 100}
           label={`${"Express"} ${(stackCount["Express"] / projects.length) *
             100}%`}
+        />
+        <ProgressBar
+          animated
+          variant={"primary"}
+          now={(stackCount["Ajax"] / projects.length) * 100}
+          label={`${"Ajax"} ${(stackCount["Ajax"] / projects.length) * 100}%`}
         />
       </ProgressBar>
     );
@@ -148,6 +154,7 @@ function App() {
     [
       "Axios",
       "Express",
+      "Ajax",
       "Mocha",
       "Chai",
       "Capybara",
@@ -658,6 +665,49 @@ function App() {
             Tech Stacks
           </Button>
           <section className={show}>
+            Color Scheme:
+            <ul class="legend">
+              <li>
+                <ProgressBar
+                  animated
+                  variant={"primary"}
+                  now={100}
+                  label={`HTTP/XMLHttp`}
+                />
+              </li>
+              <li>
+                <ProgressBar
+                  animated
+                  variant={"dark"}
+                  now={100}
+                  label={`Testing`}
+                />
+              </li>
+              <li>
+                <ProgressBar
+                  animated
+                  variant={"success"}
+                  now={100}
+                  label={`Languages`}
+                />
+              </li>
+              <li>
+                <ProgressBar
+                  animated
+                  variant={"danger"}
+                  now={100}
+                  label={`Database`}
+                />
+              </li>
+              <li>
+                <ProgressBar
+                  animated
+                  variant={"info"}
+                  now={100}
+                  label={`Framework/Library`}
+                />
+              </li>
+            </ul>
             Stack Presence of the {projects.length} Projects below
             {progressStack(projects)}
           </section>

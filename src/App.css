@@ -91,3 +91,13 @@ a:hover {
   margin: 2%;
   width: 96% !important;
 }
+
+/* basic positioning */
+.legend { list-style: none; }
+.legend li {  margin-right: 10px; }
+.legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+/* your colors */
+.legend .superawesome { background-color: #ff00ff; }
+.legend .awesome { background-color: #00ffff; }
+.legend .kindaawesome { background-color: #0000ff; }
+.legend .notawesome { background-color: #000000; }
