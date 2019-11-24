@@ -70,6 +70,27 @@ function App() {
       }
     });
 
+    finalCount.push(
+      <ProgressBar>
+        <ProgressBar
+          animated
+          variant={"warning"}
+          now={(stackCount["Axios"] / projects.length) * 100}
+          label={`${"Axios"} ${(stackCount["Axios"] / projects.length) * 100}%`}
+        />
+        <ProgressBar
+          animated
+          variant={"danger"}
+          now={(stackCount["Express"] / projects.length) * 100}
+          label={`${"Express"} ${(stackCount["Express"] / projects.length) *
+            100}%`}
+        />
+      </ProgressBar>
+    );
+
+    delete stackCount["Axios"];
+    delete stackCount["Express"];
+
     for (let stack in stackCount) {
       let variant = "info";
       if (
@@ -204,7 +225,14 @@ function App() {
         </>
       ),
       imgsrc: jungle,
-      footer: ["Ruby", "Ruby on Rails", "Postgres", "Capybara", "Poltergeist"]
+      footer: [
+        "Ruby",
+        "Ruby on Rails",
+        "ERB",
+        "Postgres",
+        "Capybara",
+        "Poltergeist"
+      ]
     },
     {
       title: (
