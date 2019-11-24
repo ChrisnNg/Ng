@@ -81,7 +81,7 @@ function App() {
       <ProgressBar>
         <ProgressBar
           animated
-          variant={"info"}
+          variant={"primary"}
           now={(stackCount["Axios"] / projects.length) * 100}
           label={`${"Axios"} ${(stackCount["Axios"] / projects.length) * 100}%`}
         />
@@ -98,26 +98,26 @@ function App() {
     finalCount.push(
       <ProgressBar
         animated
-        variant={"danger"}
+        variant={"dark"}
         now={(stackCount["Mocha"] / projects.length) * 100}
         label={`${"Mocha"} ${(stackCount["Mocha"] / projects.length) * 100}%`}
       />,
       <ProgressBar
         animated
-        variant={"danger"}
+        variant={"dark"}
         now={(stackCount["Chai"] / projects.length) * 100}
         label={`${"Chai"} ${(stackCount["Chai"] / projects.length) * 100}%`}
       />,
       <ProgressBar
         animated
-        variant={"danger"}
+        variant={"dark"}
         now={(stackCount["Capybara"] / projects.length) * 100}
         label={`${"Capybara"} ${(stackCount["Capybara"] / projects.length) *
           100}%`}
       />,
       <ProgressBar
         animated
-        variant={"danger"}
+        variant={"dark"}
         now={(stackCount["Poltergeist"] / projects.length) * 100}
         label={`${"Poltergeist"} ${(stackCount["Poltergeist"] /
           projects.length) *
@@ -125,21 +125,21 @@ function App() {
       />,
       <ProgressBar
         animated
-        variant={"danger"}
+        variant={"dark"}
         now={(stackCount["Storybook"] / projects.length) * 100}
         label={`${"Storybook"} ${(stackCount["Storybook"] / projects.length) *
           100}%`}
       />,
       <ProgressBar
         animated
-        variant={"danger"}
+        variant={"dark"}
         now={(stackCount["Cypress"] / projects.length) * 100}
         label={`${"Cypress"} ${(stackCount["Cypress"] / projects.length) *
           100}%`}
       />,
       <ProgressBar
         animated
-        variant={"danger"}
+        variant={"dark"}
         now={(stackCount["Jest"] / projects.length) * 100}
         label={`${"Jest"} ${(stackCount["Jest"] / projects.length) * 100}%`}
       />
@@ -168,19 +168,8 @@ function App() {
       ) {
         variant = "success";
       }
-      if (
-        stack === "Mocha" ||
-        stack === "Chai" ||
-        stack === "Capybara" ||
-        stack === "Poltergeist" ||
-        stack === "Storybook" ||
-        stack === "Cypress" ||
-        stack === "Jest"
-      ) {
-        variant = "danger";
-      }
       if (stack === "Postgres") {
-        variant = "warning";
+        variant = "danger";
       }
 
       finalCount.push(
