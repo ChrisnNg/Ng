@@ -666,42 +666,80 @@ function App() {
           </Button>
           <section className={show}>
             Color Scheme:
-            <ProgressBar>
+            <div className="screen">
+              <ProgressBar>
+                <ProgressBar
+                  animated
+                  variant={"primary"}
+                  now={20}
+                  label={`HTTP/XMLHttp`}
+                />
+
+                <ProgressBar
+                  animated
+                  variant={"dark"}
+                  now={20}
+                  label={`Testing`}
+                />
+
+                <ProgressBar
+                  animated
+                  variant={"success"}
+                  now={20}
+                  label={`Languages`}
+                />
+
+                <ProgressBar
+                  animated
+                  variant={"danger"}
+                  now={20}
+                  label={`Database`}
+                />
+
+                <ProgressBar
+                  animated
+                  variant={"info"}
+                  now={20}
+                  label={`Framework/Library`}
+                />
+              </ProgressBar>
+            </div>
+            <div className="mobile">
               <ProgressBar
                 animated
                 variant={"primary"}
-                now={20}
+                now={100}
                 label={`HTTP/XMLHttp`}
               />
 
               <ProgressBar
                 animated
                 variant={"dark"}
-                now={20}
+                now={100}
                 label={`Testing`}
               />
 
               <ProgressBar
                 animated
                 variant={"success"}
-                now={20}
+                now={100}
                 label={`Languages`}
               />
 
               <ProgressBar
                 animated
                 variant={"danger"}
-                now={20}
+                now={100}
                 label={`Database`}
               />
 
               <ProgressBar
                 animated
                 variant={"info"}
-                now={20}
+                now={100}
                 label={`Framework/Library`}
               />
-            </ProgressBar>
+            </div>
             Stack Presence of the Projects ({projects.length}) below
             {progressStack(projects)}
           </section>
