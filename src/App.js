@@ -666,49 +666,43 @@ function App() {
           </Button>
           <section className={show}>
             Color Scheme:
-            <ul class="legend">
-              <li>
-                <ProgressBar
-                  animated
-                  variant={"primary"}
-                  now={100}
-                  label={`HTTP/XMLHttp`}
-                />
-              </li>
-              <li>
-                <ProgressBar
-                  animated
-                  variant={"dark"}
-                  now={100}
-                  label={`Testing`}
-                />
-              </li>
-              <li>
-                <ProgressBar
-                  animated
-                  variant={"success"}
-                  now={100}
-                  label={`Languages`}
-                />
-              </li>
-              <li>
-                <ProgressBar
-                  animated
-                  variant={"danger"}
-                  now={100}
-                  label={`Database`}
-                />
-              </li>
-              <li>
-                <ProgressBar
-                  animated
-                  variant={"info"}
-                  now={100}
-                  label={`Framework/Library`}
-                />
-              </li>
-            </ul>
-            Stack Presence of the {projects.length} Projects below
+            <ProgressBar>
+              <ProgressBar
+                animated
+                variant={"primary"}
+                now={20}
+                label={`HTTP/XMLHttp`}
+              />
+
+              <ProgressBar
+                animated
+                variant={"dark"}
+                now={20}
+                label={`Testing`}
+              />
+
+              <ProgressBar
+                animated
+                variant={"success"}
+                now={20}
+                label={`Languages`}
+              />
+
+              <ProgressBar
+                animated
+                variant={"danger"}
+                now={20}
+                label={`Database`}
+              />
+
+              <ProgressBar
+                animated
+                variant={"info"}
+                now={20}
+                label={`Framework/Library`}
+              />
+            </ProgressBar>
+            Stack Presence of the Projects ({projects.length}) below
             {progressStack(projects)}
           </section>
           <Row>{createCards(projects)}</Row>
