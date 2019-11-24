@@ -71,9 +71,35 @@ function App() {
     });
 
     for (let stack in stackCount) {
+      let variant = "info";
+      if (
+        stack === "Javascript" ||
+        stack === "HTML" ||
+        stack === "CSS" ||
+        stack === "Ruby" ||
+        stack === "Golang"
+      ) {
+        variant = "success";
+      }
+      if (
+        stack === "Mocha" ||
+        stack === "Chai" ||
+        stack === "Capybara" ||
+        stack === "Poltergeist" ||
+        stack === "Storybook" ||
+        stack === "Cypress" ||
+        stack === "Jest"
+      ) {
+        variant = "danger";
+      }
+      if (stack === "Postgres") {
+        variant = "warning";
+      }
+
       finalCount.push(
         <ProgressBar
           animated
+          variant={variant}
           now={(stackCount[stack] / projects.length) * 100}
           label={`${stack} ${(stackCount[stack] / projects.length) * 100}%`}
         />
@@ -122,10 +148,10 @@ function App() {
         "CSS",
         "ReactJS",
         "Golang",
-        "React-Bootstrap",
+        "Bootstrap",
         "Material-UI",
         "Axios",
-        "Postgres with PostGIS"
+        "Postgres"
       ]
     },
     {
@@ -178,7 +204,7 @@ function App() {
         </>
       ),
       imgsrc: jungle,
-      footer: ["Rails", "Ruby on Rails", "Postgres", "Capybara", "Poltergeist"]
+      footer: ["Ruby", "Ruby on Rails", "Postgres", "Capybara", "Poltergeist"]
     },
     {
       title: (
@@ -533,8 +559,10 @@ function App() {
         </Fade>
 
         <Container>
-          <span className="text-center">Stack Count in Projects below</span>
-          {projects.length}
+          <span className="text-center">
+            Stack Count of the {projects.length} Projects below
+          </span>
+
           {progressStack(projects)}
           <Row>{createCards(projects)}</Row>
         </Container>
