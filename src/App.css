@@ -82,6 +82,9 @@ a:hover {
   -ms-transition: opacity 0.4s ease-out;
   -moz-transition: opacity 0.4s ease-out;
   -webkit-transition: opacity 0.4s ease-out;
+  margin: 2%;
+  width: 96% !important;
+  color: whitesmoke;
 }
 
 .btn {

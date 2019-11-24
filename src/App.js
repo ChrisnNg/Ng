@@ -81,13 +81,13 @@ function App() {
       <ProgressBar>
         <ProgressBar
           animated
-          variant={"warning"}
+          variant={"info"}
           now={(stackCount["Axios"] / projects.length) * 100}
           label={`${"Axios"} ${(stackCount["Axios"] / projects.length) * 100}%`}
         />
         <ProgressBar
           animated
-          variant={"danger"}
+          variant={"info"}
           now={(stackCount["Express"] / projects.length) * 100}
           label={`${"Express"} ${(stackCount["Express"] / projects.length) *
             100}%`}
@@ -95,8 +95,67 @@ function App() {
       </ProgressBar>
     );
 
-    delete stackCount["Axios"];
-    delete stackCount["Express"];
+    finalCount.push(
+      <ProgressBar
+        animated
+        variant={"danger"}
+        now={(stackCount["Mocha"] / projects.length) * 100}
+        label={`${"Mocha"} ${(stackCount["Mocha"] / projects.length) * 100}%`}
+      />,
+      <ProgressBar
+        animated
+        variant={"danger"}
+        now={(stackCount["Chai"] / projects.length) * 100}
+        label={`${"Chai"} ${(stackCount["Chai"] / projects.length) * 100}%`}
+      />,
+      <ProgressBar
+        animated
+        variant={"danger"}
+        now={(stackCount["Capybara"] / projects.length) * 100}
+        label={`${"Capybara"} ${(stackCount["Capybara"] / projects.length) *
+          100}%`}
+      />,
+      <ProgressBar
+        animated
+        variant={"danger"}
+        now={(stackCount["Poltergeist"] / projects.length) * 100}
+        label={`${"Poltergeist"} ${(stackCount["Poltergeist"] /
+          projects.length) *
+          100}%`}
+      />,
+      <ProgressBar
+        animated
+        variant={"danger"}
+        now={(stackCount["Storybook"] / projects.length) * 100}
+        label={`${"Storybook"} ${(stackCount["Storybook"] / projects.length) *
+          100}%`}
+      />,
+      <ProgressBar
+        animated
+        variant={"danger"}
+        now={(stackCount["Cypress"] / projects.length) * 100}
+        label={`${"Cypress"} ${(stackCount["Cypress"] / projects.length) *
+          100}%`}
+      />,
+      <ProgressBar
+        animated
+        variant={"danger"}
+        now={(stackCount["Jest"] / projects.length) * 100}
+        label={`${"Jest"} ${(stackCount["Jest"] / projects.length) * 100}%`}
+      />
+    );
+
+    [
+      "Axios",
+      "Express",
+      "Mocha",
+      "Chai",
+      "Capybara",
+      "Poltergeist",
+      "Storybook",
+      "Cypress",
+      "Jest"
+    ].forEach(stack => delete stackCount[stack]);
 
     for (let stack in stackCount) {
       let variant = "info";
@@ -598,7 +657,7 @@ function App() {
             Tech Stacks
           </Button>
           <section className={show}>
-            Stack Count of the {projects.length} Projects below
+            Stack Presence of the {projects.length} Projects below
             {progressStack(projects)}
           </section>
           <Row>{createCards(projects)}</Row>
