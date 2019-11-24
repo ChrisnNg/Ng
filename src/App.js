@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import pfp from "./assets/pfp.png";
 import lhl from "./assets/lhl.jpg";
 import hobby from "./assets/hobby.jpg";
@@ -16,7 +16,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Nav";
 import Card from "./components/Card";
-import { Row, Container, Col, ProgressBar } from "react-bootstrap";
+import { Row, Container, Col, ProgressBar, Button } from "react-bootstrap";
 import Landing from "./components/Landing.js";
 import Fade from "react-reveal/Fade";
 import coding from "./assets/coding.jpg";
@@ -57,6 +57,13 @@ function App() {
       );
     });
     return allCards;
+  }
+
+  const [show, handleShow] = useState("hidden");
+  function handleClick() {
+    if (show === "hidden") {
+      handleShow("show");
+    } else handleShow("hidden");
   }
 
   function progressStack(projects) {
@@ -587,11 +594,13 @@ function App() {
         </Fade>
 
         <Container>
-          <span className="text-center">
+          <Button variant="info" block onClick={handleClick}>
+            Tech Stacks
+          </Button>
+          <section className={show}>
             Stack Count of the {projects.length} Projects below
-          </span>
-
-          {progressStack(projects)}
+            {progressStack(projects)}
+          </section>
           <Row>{createCards(projects)}</Row>
         </Container>
       </section>
