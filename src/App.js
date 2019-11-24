@@ -59,6 +59,29 @@ function App() {
     return allCards;
   }
 
+  function progressStack(projects) {
+    let stackCount = {};
+    const finalCount = [];
+    projects.map(project => {
+      for (let stack of project.footer) {
+        if (stackCount[stack]) {
+          stackCount[stack] += 1;
+        } else stackCount[stack] = 1;
+      }
+    });
+
+    for (let stack in stackCount) {
+      finalCount.push(
+        <ProgressBar
+          animated
+          now={(stackCount[stack] / projects.length) * 100}
+          label={`${stack} ${(stackCount[stack] / projects.length) * 100}%`}
+        />
+      );
+    }
+    return finalCount;
+  }
+
   let projects = [
     {
       title: (
@@ -95,6 +118,8 @@ function App() {
       imgsrc: cat_park,
       footer: [
         "Javascript",
+        "HTML",
+        "CSS",
         "ReactJS",
         "Golang",
         "React-Bootstrap",
@@ -508,12 +533,9 @@ function App() {
         </Fade>
 
         <Container>
-          <ProgressBar
-            animated
-            now={(projects.length / projects.length) * 100}
-            label={`${(projects.length / projects.length) * 100}%`}
-          />
+          <span className="text-center">Stack Count in Projects below</span>
           {projects.length}
+          {progressStack(projects)}
           <Row>{createCards(projects)}</Row>
         </Container>
       </section>
