@@ -35,6 +35,9 @@ import lotide from "./assets/lotide.png";
 import tinyapp from "./assets/tinyapp.png";
 import stackdata from "./assets/stackdata.jpeg";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
   function createCards(arrayOfCards) {
     const allCards = [];
@@ -63,6 +66,9 @@ function App() {
   function handleClick() {
     if (show === "hidden") {
       handleShow("show");
+      toast.info("Click on the Project titles to access their Githubs!", {
+        position: toast.POSITION.BOTTOM_RIGHT
+      });
     } else handleShow("hidden");
   }
 
@@ -747,6 +753,7 @@ function App() {
         </Container>
       </section>
       <h2 />
+      <ToastContainer />
       <Footer />
     </div>
   );
