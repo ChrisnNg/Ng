@@ -67,7 +67,7 @@ function App() {
     if (show === "hidden") {
       handleShow("show");
       toast("Click on the Project titles to access their Githubs!", {
-        position: toast.POSITION.BOTTOM_RIGHT
+        position: toast.POSITION.TOP_CENTER
       });
     } else handleShow("hidden");
   }
