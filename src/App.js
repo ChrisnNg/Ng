@@ -397,11 +397,11 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoaded(true);
-    }, 1700);
+    }, 1000);
   }, []);
 
   const defaultOptions = {
-    loop: true,
+    loop: false,
     autoplay: true,
     animationData: loader.default,
     rendererSettings: {
@@ -417,13 +417,20 @@ function App() {
             className="d-flex justify-content-center align-items-center"
             id="loader"
           >
-            <Lottie options={defaultOptions} height={120} width={120} />
+            <Lottie
+              id="loader"
+              options={defaultOptions}
+              height={400}
+              width={400}
+            />
           </div>
         </Fade>
       ) : (
         <div>
           <header className="App-header">
-            <Landing />
+            <Fade bottom>
+              <Landing />
+            </Fade>
           </header>
           <Navbar />
           <section id="about">
