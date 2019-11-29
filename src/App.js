@@ -50,7 +50,7 @@ function App() {
 
       allCards.push(
         <Col sm={"auto"}>
-          <Fade right>
+          <Fade bottom>
             <Card
               title={card.title}
               text={card.text}
@@ -455,7 +455,7 @@ function App() {
                           <br />
                           <OverlayTrigger
                             key="react"
-                            placement="left"
+                            placement="bottom"
                             delay={{ show: 250, hide: 400 }}
                             overlay={
                               <Tooltip id={`tooltip-${"react"}`}>
@@ -539,7 +539,7 @@ function App() {
                           </OverlayTrigger>
                           <OverlayTrigger
                             key="test"
-                            placement="right"
+                            placement="bottom"
                             delay={{ show: 250, hide: 400 }}
                             overlay={
                               <Tooltip id={`tooltip-${"test"}`}>
