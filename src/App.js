@@ -397,7 +397,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoaded(true);
-    }, 1000);
+    }, 1250);
   }, []);
 
   const defaultOptions = {
