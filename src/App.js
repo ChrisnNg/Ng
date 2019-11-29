@@ -63,6 +63,8 @@ function App() {
   }
 
   const [show, handleShow] = useState("hidden");
+  const [loaded, setLoaded] = useState(false);
+
   function handleClick() {
     if (show === "hidden") {
       handleShow("show");
@@ -391,11 +393,15 @@ function App() {
   ];
 
   useEffect(() => {
-    document.title = "Chris Ng";
+    setTimeout(() => {
+      setLoaded(true);
+    }, 1000);
   }, []);
+
   return (
     <div className="App">
       <header className="App-header">
+        {!loaded ? <p>loading</p> : <h1>hello world</h1>}
         <Landing />
       </header>
       <Navbar />
