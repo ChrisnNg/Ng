@@ -64,12 +64,12 @@ function App() {
     return allCards;
   }
 
-  const [show, handleShow] = useState("hidden");
+  const [Show, handleShow] = useState("hidden");
   const [loaded, setLoaded] = useState(false);
 
   function handleClick() {
-    if (show === "hidden") {
-      handleShow("show");
+    if (Show === "hidden") {
+      handleShow("Show");
       toast("Click on the Project titles to access their Githubs!", {
         position: toast.POSITION.TOP_CENTER
       });
@@ -704,7 +704,7 @@ function App() {
               <Button variant="info" block onClick={handleClick}>
                 Tech Stacks
               </Button>
-              <section className={show}>
+              <section className={Show}>
                 Color Scheme:
                 <div className="screen">
                   <ProgressBar>

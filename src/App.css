@@ -76,13 +76,14 @@ a:hover {
   height: 0px;
 }
 /* note that show also affects tooltips */
-.show {
+.Show {
   opacity: 1;
   transition: opacity 0.4s ease-out;
   -ms-transition: opacity 0.4s ease-out;
   -moz-transition: opacity 0.4s ease-out;
   -webkit-transition: opacity 0.4s ease-out;
   margin: 2%;
+  width: 96% !important;
   color: whitesmoke;
 }
 
