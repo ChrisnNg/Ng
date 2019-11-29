@@ -50,7 +50,7 @@ function App() {
 
       allCards.push(
         <Col sm={"auto"}>
-          <Fade bottom>
+          <Fade right>
             <Card
               title={card.title}
               text={card.text}
