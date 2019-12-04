@@ -1,6 +1,7 @@
 import React from "react";
 import "./Landing.css";
 import Fade from "react-reveal/Fade";
+import { Button } from "react-bootstrap";
 
 const Landing = props => {
   return (
@@ -13,6 +14,13 @@ const Landing = props => {
           <Fade right>
             <p>A Full-Stack Web Developer Graduate from Lighthouse Labs</p>
           </Fade>
+
+          <Button type="button" className="btn btn-info landing-btn">
+            Contact Me
+          </Button>
+          <Button type="button" className="btn btn-info landing-btn">
+            Resume
+          </Button>
         </article>
       </section>
     </>

@@ -39,6 +39,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import * as loader from "./assets/loader.json";
 import Lottie from "react-lottie";
+import ContactMe from "./components/ContactMe.js";
 
 function App() {
   function createCards(arrayOfCards) {
@@ -701,7 +702,7 @@ function App() {
             </Fade>
 
             <Container>
-              <Button variant="info" block onClick={handleClick}>
+              <Button variant="info" block onClick={handleClick} id="stack">
                 Tech Stacks
               </Button>
               <section className={Show}>
