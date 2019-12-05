@@ -98,8 +98,9 @@ function App() {
         <ProgressBar
           animated
           variant={"primary"}
-          now={(stackCount["Express"] / projects.length) * 100}
-          label={`${"Express"} ${(stackCount["Express"] / projects.length) *
+          now={(stackCount["Node.js & Express"] / projects.length) * 100}
+          label={`${"Node.js & Express"} ${(stackCount["Node.js & Express"] /
+            projects.length) *
             100}%`}
         />
         <ProgressBar
@@ -163,7 +164,7 @@ function App() {
 
     [
       "Axios",
-      "Express",
+      "Node.js & Express",
       "Ajax",
       "Mocha",
       "Chai",
@@ -328,7 +329,7 @@ function App() {
         </>
       ),
       imgsrc: miso,
-      footer: ["Javascript", "HTML", "CSS", "Express", "Postgres"]
+      footer: ["Javascript", "HTML", "CSS", "Node.js & Express", "Postgres"]
     },
     {
       title: (
@@ -350,7 +351,14 @@ function App() {
         </>
       ),
       imgsrc: tweeter,
-      footer: ["Javascript", "HTML", "CSS", "Ajax", "Express", "Jquery"]
+      footer: [
+        "Javascript",
+        "HTML",
+        "CSS",
+        "Ajax",
+        "Node.js & Express",
+        "Jquery"
+      ]
     },
     {
       title: (
@@ -390,7 +398,14 @@ function App() {
         </>
       ),
       imgsrc: tinyapp,
-      footer: ["Javascript", "HTML", "CSS", "Express", "Mocha", "Chai"]
+      footer: [
+        "Javascript",
+        "HTML",
+        "CSS",
+        "Node.js & Express",
+        "Mocha",
+        "Chai"
+      ]
     }
   ];
 

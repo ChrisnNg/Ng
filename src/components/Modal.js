@@ -1,18 +1,34 @@
 import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 import "./Modal.css";
+import axios from "axios";
+import qs from "qs";
 
 export default function MyVerticallyCenteredModal(props) {
-  const [fname, setfname] = useState("");
-  const [lname, setlname] = useState("");
+  const [name, setname] = useState("");
   const [email, setemail] = useState("");
   const [message, setmessage] = useState("");
+  const [mailSent, setmailSent] = useState(false);
+  const [error, seterror] = useState(null);
 
   function handleFormSubmit(event) {
     event.preventDefault();
-    console.log("submitted", fname, lname, email, message);
-  }
 
+    const form = {
+      name: name,
+      email: email,
+      message: message
+    };
+
+    axios
+      .post(process.env.REACT_APP_API_URL, qs.stringify(form))
+      .then(response => {
+        console.log(response);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }
   return (
     <Modal
       {...props}
@@ -26,27 +42,17 @@ export default function MyVerticallyCenteredModal(props) {
       <Modal.Body>
         <h4>Centered Modal</h4>
         <div>
-          <form action="#">
-            <label>First Name</label>
+          <form name="myemailform" action="form-to-email.php">
+            <label htmlFor="name">Name</label>
             <input
               type="text"
-              id="fname"
-              name="firstname"
+              id="name"
+              name="name"
               placeholder="Your name.."
-              value={fname}
-              onChange={e => setfname(e.target.value)}
+              value={name}
+              onChange={e => setname(e.target.value)}
             />
-            <label>Last Name</label>
-            <input
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Your last name.."
-              value={lname}
-              onChange={e => setlname(e.target.value)}
-            />
-
-            <label>Email</label>
+            <label htmlFor="email">Email</label>
             <input
               type="email"
               id="email"
@@ -56,7 +62,7 @@ export default function MyVerticallyCenteredModal(props) {
               onChange={e => setemail(e.target.value)}
             />
 
-            <label>Message</label>
+            <label htmlFor="message">Message</label>
             <textarea
               id="message"
               name="message"
@@ -69,6 +75,7 @@ export default function MyVerticallyCenteredModal(props) {
               onClick={e => handleFormSubmit(e)}
               value="Submit"
             />
+            <div>{mailSent && <div>Thank you for contacting us.</div>}</div>
           </form>
         </div>
       </Modal.Body>
