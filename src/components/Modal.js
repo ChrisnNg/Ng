@@ -3,6 +3,7 @@ import { Button, Modal } from "react-bootstrap";
 import "./Modal.css";
 import axios from "axios";
 import qs from "qs";
+import Fade from "react-reveal/Fade";
 
 export default function MyVerticallyCenteredModal(props) {
   const [name, setname] = useState("");
@@ -24,9 +25,16 @@ export default function MyVerticallyCenteredModal(props) {
       .post(process.env.REACT_APP_API_URL, qs.stringify(form))
       .then(response => {
         console.log(response);
+        setmailSent(true);
+        seterror(null);
+        setname("");
+        setemail("");
+        setmessage("");
       })
       .catch(error => {
         console.log(error);
+        seterror(true);
+        setmailSent(false);
       });
   }
   return (
@@ -75,7 +83,23 @@ export default function MyVerticallyCenteredModal(props) {
               onClick={e => handleFormSubmit(e)}
               value="Submit"
             />
-            <div>{mailSent && <div>Thank you for contacting us.</div>}</div>
+            <div>
+              {mailSent && (
+                <Fade>
+                  <div className="sucess">
+                    Thanks for reaching out. I'll get back to you as soon as
+                    possible.
+                  </div>
+                </Fade>
+              )}
+            </div>
+            <div>
+              {error && (
+                <Fade>
+                  <div className="danger">I'm sorry, an error has occured.</div>
+                </Fade>
+              )}
+            </div>
           </form>
         </div>
       </Modal.Body>
