@@ -48,7 +48,6 @@ export default function MyVerticallyCenteredModal(props) {
         <Modal.Title id="contained-modal-title-vcenter">Contact Me</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Centered Modal</h4>
         <div>
           <form name="myemailform" action="form-to-email.php">
             <label htmlFor="name">Name</label>
@@ -96,7 +95,9 @@ export default function MyVerticallyCenteredModal(props) {
             <div>
               {error && (
                 <Fade>
-                  <div className="danger">I'm sorry, an error has occured.</div>
+                  <div className="danger">
+                    Your message was unable to be submitted.
+                  </div>
                 </Fade>
               )}
             </div>
