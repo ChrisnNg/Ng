@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Landing.css";
 import Fade from "react-reveal/Fade";
-import { Button } from "react-bootstrap";
+import { Button, Modal } from "react-bootstrap";
 import MyVerticallyCenteredModal from "./Modal.js";
 
 const Landing = props => {
@@ -25,9 +25,14 @@ const Landing = props => {
           >
             Contact Me
           </Button>
-          <Button type="button" className="btn btn-info landing-btn">
+
+          <a
+            className="btn btn-info landing-btn"
+            href="https://resume.creddle.io/resume/ei50h47r5km"
+            target="_blank"
+          >
             Resume
-          </Button>
+          </a>
         </article>
         <MyVerticallyCenteredModal
           show={modalShow}
