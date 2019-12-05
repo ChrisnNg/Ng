@@ -14,7 +14,9 @@ const infoCard = props => {
           <Card.Text className="card-text">{props.text}</Card.Text>
         </Card.ImgOverlay>
         {props.footer ? (
-          <Card.Footer className="text-muted">{props.footer}</Card.Footer>
+          <Card.Footer className="text-muted card-footer">
+            {props.footer}
+          </Card.Footer>
         ) : (
           false
         )}

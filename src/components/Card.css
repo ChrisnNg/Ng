@@ -75,3 +75,9 @@ img.card-img {
   transition:.5s;
   transform: translateY(10px);
 }
+
+@media only screen and (min-width: 995px) {
+  .card-footer {
+    height: 75px;
+  }
+}

@@ -16,6 +16,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Nav";
 import Card from "./components/Card";
+import CardColumns from "react-bootstrap/CardColumns";
 import { Row, Container, Col, ProgressBar, Button } from "react-bootstrap";
 import Landing from "./components/Landing.js";
 import Fade from "react-reveal/Fade";
@@ -49,16 +50,14 @@ function App() {
       } else card["footer"] = null;
 
       allCards.push(
-        <Col sm={"auto"}>
-          <Fade right>
-            <Card
-              title={card.title}
-              text={card.text}
-              imgsrc={card.imgsrc}
-              footer={card.footer}
-            />
-          </Fade>
-        </Col>
+        <Fade right>
+          <Card
+            title={card.title}
+            text={card.text}
+            imgsrc={card.imgsrc}
+            footer={card.footer}
+          />
+        </Fade>
       );
     });
     return allCards;
@@ -722,7 +721,10 @@ function App() {
             <Fade left>
               <h2>
                 Major Projects{" "}
-                <span className="mini">See the rest on Github</span>
+                <span className="mini">
+                  See the rest on{" "}
+                  <a href="https://github.com/ChrisnNg">Github</a>
+                </span>
               </h2>
             </Fade>
 
@@ -809,7 +811,7 @@ function App() {
                 Stack Presence of the Projects ({projects.length}) below
                 {progressStack(projects)}
               </section>
-              <Row>{createCards(projects)}</Row>
+              <CardColumns>{createCards(projects)}</CardColumns>
             </Container>
           </section>
           <h2 />
