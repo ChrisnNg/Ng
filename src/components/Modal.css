@@ -27,3 +27,7 @@ input[type=submit]:hover {
 .danger {
   color: red;
 }
+
+.modal-content {
+  font-family: 'Montserrat', sans-serif;
+}
