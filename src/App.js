@@ -213,12 +213,20 @@ function App() {
         <>
           This website you're current on!
           <br />
-          Created the first week after my graduation from Lighthouse Labs, This
-          site serves as the point of reference for future employers.
+          This is a portfolio website built with react that uses an Express
+          back-end to send emails through the contact me form.
         </>
       ),
       imgsrc: site,
-      footer: ["Javascript", "HTML", "CSS", "ReactJS", "Bootstrap", "Jquery"]
+      footer: [
+        "Javascript",
+        "HTML",
+        "CSS",
+        "ReactJS",
+        "Bootstrap",
+        "Jquery",
+        "Node.js & Express"
+      ]
     },
     {
       title: (
@@ -712,7 +720,10 @@ function App() {
 
           <section id="projects">
             <Fade left>
-              <h2>Projects</h2>
+              <h2>
+                Major Projects{" "}
+                <span className="mini">See the rest on Github</span>
+              </h2>
             </Fade>
 
             <Container>
