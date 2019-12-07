@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Modal, Spinner } from "react-bootstrap";
+import { Button, Modal, Spinner, Form } from "react-bootstrap";
 import "./Modal.css";
 import axios from "axios";
 import qs from "qs";
@@ -12,9 +12,11 @@ export default function MyVerticallyCenteredModal(props) {
   const [mailSent, setmailSent] = useState(false);
   const [error, seterror] = useState(null);
   const [loading, setloading] = useState(false);
+  const [validated, setValidated] = useState(false);
 
   function handleFormSubmit(event) {
     event.preventDefault();
+
     setloading(true);
     const form = {
       name: name,
@@ -51,26 +53,27 @@ export default function MyVerticallyCenteredModal(props) {
       </Modal.Header>
       <Modal.Body>
         <div>
-          <form name="myemailform" action="form-to-email.php">
-            <label htmlFor="name">Name</label>
-            <input
+          <Form validated={validated} onSubmit={e => handleFormSubmit(e)}>
+            <Form.Label>Name</Form.Label>
+            <Form.Control
+              required
               type="text"
               id="name"
               name="name"
-              placeholder="Your name.."
               value={name}
               onChange={e => setname(e.target.value)}
+              placeholder="Your name.."
             />
-            <label htmlFor="email">Email</label>
-            <input
+            <Form.Label>Email</Form.Label>
+            <Form.Control
+              required
               type="email"
               id="email"
               name="email"
-              placeholder="Your email"
               value={email}
               onChange={e => setemail(e.target.value)}
+              placeholder="Your email"
             />
-
             <label htmlFor="message">Message</label>
             <textarea
               id="message"
@@ -79,11 +82,7 @@ export default function MyVerticallyCenteredModal(props) {
               onChange={e => setmessage(e.target.value)}
               value={message}
             ></textarea>
-            <Button
-              variant="success"
-              type="submit"
-              onClick={e => handleFormSubmit(e)}
-            >
+            <Button variant="success" type="submit">
               {!loading ? (
                 "Submit"
               ) : (
@@ -118,7 +117,7 @@ export default function MyVerticallyCenteredModal(props) {
                 </Fade>
               )}
             </div>
-          </form>
+          </Form>
         </div>
       </Modal.Body>
       <Modal.Footer>
