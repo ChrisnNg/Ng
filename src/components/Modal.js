@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Modal } from "react-bootstrap";
+import { Button, Modal, Spinner } from "react-bootstrap";
 import "./Modal.css";
 import axios from "axios";
 import qs from "qs";
@@ -11,10 +11,11 @@ export default function MyVerticallyCenteredModal(props) {
   const [message, setmessage] = useState("");
   const [mailSent, setmailSent] = useState(false);
   const [error, seterror] = useState(null);
+  const [loading, setloading] = useState(false);
 
   function handleFormSubmit(event) {
     event.preventDefault();
-
+    setloading(true);
     const form = {
       name: name,
       email: email,
@@ -30,6 +31,7 @@ export default function MyVerticallyCenteredModal(props) {
         setname("");
         setemail("");
         setmessage("");
+        setloading(false);
       })
       .catch(error => {
         console.log(error);
@@ -77,11 +79,26 @@ export default function MyVerticallyCenteredModal(props) {
               onChange={e => setmessage(e.target.value)}
               value={message}
             ></textarea>
-            <input
+            <Button
+              variant="success"
               type="submit"
               onClick={e => handleFormSubmit(e)}
-              value="Submit"
-            />
+            >
+              {!loading ? (
+                "Submit"
+              ) : (
+                <>
+                  <Spinner
+                    as="span"
+                    animation="grow"
+                    size="sm"
+                    role="status"
+                    aria-hidden="true"
+                  />{" "}
+                  Loading...
+                </>
+              )}
+            </Button>
             <div>
               {mailSent && (
                 <Fade>
