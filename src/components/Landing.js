@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Landing.css";
 import Fade from "react-reveal/Fade";
-import { Button, Modal } from "react-bootstrap";
-import MyVerticallyCenteredModal from "./Modal.js";
+import { Button } from "react-bootstrap";
+import ContactMe from "./Form.js";
 
 const Landing = props => {
   const [modalShow, setModalShow] = React.useState(false);
@@ -34,10 +34,7 @@ const Landing = props => {
             Résumé
           </a>
         </article>
-        <MyVerticallyCenteredModal
-          show={modalShow}
-          onHide={() => setModalShow(false)}
-        />
+        <ContactMe show={modalShow} onHide={() => setModalShow(false)} />
       </section>
     </>
   );

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Modal, Spinner, Form } from "react-bootstrap";
-import "./Modal.css";
+import "./Form.css";
 import axios from "axios";
 import qs from "qs";
 import Fade from "react-reveal/Fade";
@@ -62,7 +62,7 @@ export default function MyVerticallyCenteredModal(props) {
               name="name"
               value={name}
               onChange={e => setname(e.target.value)}
-              placeholder="Your name.."
+              placeholder="Your name"
             />
             <Form.Label>Email</Form.Label>
             <Form.Control
@@ -78,7 +78,7 @@ export default function MyVerticallyCenteredModal(props) {
             <textarea
               id="message"
               name="message"
-              placeholder="Write something.."
+              placeholder="Your message"
               onChange={e => setmessage(e.target.value)}
               value={message}
             ></textarea>
