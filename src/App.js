@@ -17,7 +17,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Nav";
 import Card from "./components/Card";
 import CardColumns from "react-bootstrap/CardColumns";
-import { Row, Container, Col, ProgressBar, Button } from "react-bootstrap";
+import {
+  Row,
+  Container,
+  Col,
+  ProgressBar,
+  Button,
+  Modal
+} from "react-bootstrap";
 import Landing from "./components/Landing.js";
 import Fade from "react-reveal/Fade";
 import coding from "./assets/coding.jpg";
