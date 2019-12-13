@@ -40,7 +40,7 @@ function App() {
     const allCards = [];
     arrayOfCards.map(card => {
       if (card.footer) {
-        card.footer = card.footer.join(" ");
+        card.footer.join(" ");
       } else card["footer"] = null;
 
       allCards.push(
@@ -166,7 +166,7 @@ function App() {
       "Storybook",
       "Cypress",
       "Jest"
-    ].forEach(stack => delete stackCount[stack]);
+    ].map(stack => delete stackCount[stack]);
 
     for (let stack in stackCount) {
       let variant = "info";
