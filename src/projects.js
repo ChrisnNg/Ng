@@ -17,10 +17,9 @@ export let projects = [
     ),
     text: (
       <>
-        This website you're current on!
-        <br />
-        This is a portfolio website built with react that uses an Express
-        back-end to send emails through the contact me form.
+        <br />A single-paged portfolio website that focuses on the user
+        interface. Emails are served to me through Nodemailer, Express, and
+        Google's OAuth 2.0 on form submission.
       </>
     ),
     imgsrc: site,
@@ -42,11 +41,12 @@ export let projects = [
     ),
     text: (
       <>
-        If you can't park, use cat_park! This project was created by Chris and
-        Thomas (CaT) to solve the problems of finding parking in metro
-        Vancouver. Included in this app are all the parking meters in Vancouver
-        and a crime heatmap to see where it is safer to park relative to the
-        area.
+        Using the Vancouver Police Department's open data set, we created an
+        interactive heat map using 534,506 records of crimes. Our backend is
+        made with Golang and each click on the map sends a spatial query request
+        into our Postgres with Postgis database and fetches and renders a custom
+        cluster marker set for all parking meters within 500 meters of the
+        click.
       </>
     ),
     imgsrc: cat_park,
@@ -71,9 +71,10 @@ export let projects = [
     text: (
       <>
         <span>
-          A Single-paged application with a persistent database to help schedule
-          interviews. Built with React.js and tested with Jest, Cypress, and
-          Storybook.
+          A ReactJS based single-paged application with a persistent database to
+          help schedule interviews. Combined small components we built and
+          tested with Storybook. Automated tests are written with Jest and
+          Cypress to ensure user experience is optimal.
           <br />
           Hosted{" "}
           <a href="https://vigorous-elion-2594d4.netlify.com/" target="_blank">
@@ -104,8 +105,9 @@ export let projects = [
     text: (
       <>
         A mini e-commerce application built with Rails 4.2 for purposes of
-        teaching Rails by example. As a student, I have used this application to
-        solve bugs and implement tickets VIA ticket-style.
+        learning to complete a partially completed codebase. After diving in and
+        understanding the code, I solved bugs, implemented UI changes, new
+        features, and wrote tests VIA ticket-style.
       </>
     ),
     imgsrc: jungle,
@@ -127,9 +129,10 @@ export let projects = [
     text: (
       <>
         <span>
-          A smart, auto-categorizing todo list app. The user simply has to add
-          the content, and it gets put into the correct list. Created as the
-          product of my first group project.
+          A smart todo list app that persists user data using Express/Postgres.
+          It will automatically categorize each todo list item into a category
+          (movies, books, products, restaurants) by using our categorization
+          logic built with Google's relevancy algorithm.
           <br />
           Hosted{" "}
           <a href="https://misolist.herokuapp.com/" target="_blank">
@@ -150,9 +153,8 @@ export let projects = [
     ),
     text: (
       <>
-        Tweeter is a simple, single-page Twitter clone. This was built to
-        practice my HTML, CSS, JS, jQuery and AJAX front-end skills, and my
-        Node, Express and MongoDB back-end skills
+        A single-paged twitter clone project where users write tweets for
+        randomly generated users that are appended onto a live feed.
         <br />
         Hosted{" "}
         <a href="https://tweeter-chris.herokuapp.com/" target="_blank">
@@ -189,10 +191,10 @@ export let projects = [
     ),
     text: (
       <>
-        TinyApp is a full stack web application built with Node and Express that
-        allows users to shorten long URLs (à la bit.ly). Fully features user
-        account creation and user specific links and encypts account information
-        with bcrypt. Tested with Mocha and Chai.
+        Solving the problem of text character limitations, this Node.js
+        application allows each user to create a persisting account (encrypted
+        with bcrypt) and to shorten their own list of long URLs similar to
+        TinyURL.com and bit.ly. Tests are written using Mocha and Chai.
         <br />
         Hosted{" "}
         <a href="https://tiny-app-chris.herokuapp.com/login" target="_blank">
