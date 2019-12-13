@@ -12,7 +12,6 @@ export default function MyVerticallyCenteredModal(props) {
   const [mailSent, setmailSent] = useState(false);
   const [error, seterror] = useState(null);
   const [loading, setloading] = useState(false);
-  const [validated, setValidated] = useState(false);
 
   function handleFormSubmit(event) {
     event.preventDefault();
@@ -27,7 +26,7 @@ export default function MyVerticallyCenteredModal(props) {
     axios
       .post(process.env.REACT_APP_API_URL, qs.stringify(form))
       .then(response => {
-        console.log(response);
+        // console.log(response);
         setmailSent(true);
         seterror(null);
         setname("");
@@ -53,7 +52,7 @@ export default function MyVerticallyCenteredModal(props) {
       </Modal.Header>
       <Modal.Body>
         <div>
-          <Form validated={validated} onSubmit={e => handleFormSubmit(e)}>
+          <Form onSubmit={e => handleFormSubmit(e)}>
             <Form.Label>Name</Form.Label>
             <Form.Control
               required

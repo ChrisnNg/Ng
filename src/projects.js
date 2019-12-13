@@ -11,7 +11,11 @@ import tinyapp from "./assets/tinyapp.png";
 export let projects = [
   {
     title: (
-      <a href="https://github.com/ChrisnNg/Ng" target="_blank">
+      <a
+        href="https://github.com/ChrisnNg/Ng"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         My Portfolio Site
       </a>
     ),
@@ -35,7 +39,11 @@ export let projects = [
   },
   {
     title: (
-      <a href="https://github.com/ChrisnNg/cat_park" target="_blank">
+      <a
+        href="https://github.com/ChrisnNg/cat_park"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         cat_park
       </a>
     ),
@@ -64,7 +72,11 @@ export let projects = [
   },
   {
     title: (
-      <a href="https://github.com/ChrisnNg/scheduler" target="_blank">
+      <a
+        href="https://github.com/ChrisnNg/scheduler"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Scheduler
       </a>
     ),
@@ -77,7 +89,11 @@ export let projects = [
           Cypress to ensure user experience is optimal.
           <br />
           Hosted{" "}
-          <a href="https://vigorous-elion-2594d4.netlify.com/" target="_blank">
+          <a
+            href="https://vigorous-elion-2594d4.netlify.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Here
           </a>
           &nbsp; on Netlify, and database hosted on Heroku.
@@ -98,7 +114,11 @@ export let projects = [
   },
   {
     title: (
-      <a href="https://github.com/ChrisnNg/jungle-rails" target="_blank">
+      <a
+        href="https://github.com/ChrisnNg/jungle-rails"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Jungle
       </a>
     ),
@@ -122,7 +142,11 @@ export let projects = [
   },
   {
     title: (
-      <a href="https://github.com/ChrisnNg/miso_list" target="_blank">
+      <a
+        href="https://github.com/ChrisnNg/miso_list"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         miso_list
       </a>
     ),
@@ -135,7 +159,11 @@ export let projects = [
           logic built with Google's relevancy algorithm.
           <br />
           Hosted{" "}
-          <a href="https://misolist.herokuapp.com/" target="_blank">
+          <a
+            href="https://misolist.herokuapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Here
           </a>
           &nbsp; on Heroku.
@@ -147,7 +175,11 @@ export let projects = [
   },
   {
     title: (
-      <a href="https://github.com/ChrisnNg/tweeter" target="_blank">
+      <a
+        href="https://github.com/ChrisnNg/tweeter"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Tweeter
       </a>
     ),
@@ -157,7 +189,11 @@ export let projects = [
         randomly generated users that are appended onto a live feed.
         <br />
         Hosted{" "}
-        <a href="https://tweeter-chris.herokuapp.com/" target="_blank">
+        <a
+          href="https://tweeter-chris.herokuapp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Here
         </a>
         &nbsp; on Heroku.
@@ -168,7 +204,11 @@ export let projects = [
   },
   {
     title: (
-      <a href="https://github.com/ChrisnNg/lotide" target="_blank">
+      <a
+        href="https://github.com/ChrisnNg/lotide"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Lotide
       </a>
     ),
@@ -185,7 +225,11 @@ export let projects = [
   },
   {
     title: (
-      <a href="https://github.com/ChrisnNg/tinyapp" target="_blank">
+      <a
+        href="https://github.com/ChrisnNg/tinyapp"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Tinyapp
       </a>
     ),
@@ -197,7 +241,11 @@ export let projects = [
         TinyURL.com and bit.ly. Tests are written using Mocha and Chai.
         <br />
         Hosted{" "}
-        <a href="https://tiny-app-chris.herokuapp.com/login" target="_blank">
+        <a
+          href="https://tiny-app-chris.herokuapp.com/login"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Here
         </a>
         &nbsp; on Heroku.

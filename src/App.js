@@ -17,14 +17,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Nav";
 import Card from "./components/Card";
 import CardColumns from "react-bootstrap/CardColumns";
-import {
-  Row,
-  Container,
-  Col,
-  ProgressBar,
-  Button,
-  Modal
-} from "react-bootstrap";
+import { Row, Container, Col, ProgressBar, Button } from "react-bootstrap";
 import Landing from "./components/Landing.js";
 import Fade from "react-reveal/Fade";
 import coding from "./assets/coding.jpg";
@@ -482,6 +475,7 @@ function App() {
                         <a
                           href="https://medium.com/@cristopherng/javascript-the-stack-data-structure-54d5d2e1905b"
                           target="_blank"
+                          rel="noopener noreferrer"
                         >
                           Javascript: The Stack Data Structure
                         </a>

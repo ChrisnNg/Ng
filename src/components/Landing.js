@@ -30,6 +30,7 @@ const Landing = props => {
             className="btn btn-info landing-btn"
             href="https://resume.creddle.io/resume/fllf53dk8p7"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Résumé
           </a>
