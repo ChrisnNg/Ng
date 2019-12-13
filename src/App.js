@@ -38,7 +38,7 @@ import { projects } from "./projects.js";
 function App() {
   function createCards(arrayOfCards) {
     const allCards = [];
-    arrayOfCards.map(card => {
+    arrayOfCards.forEach(card => {
       if (card.footer) {
         card.footer.join(" ");
       } else card["footer"] = null;
@@ -72,7 +72,7 @@ function App() {
   function progressStack(projects) {
     let stackCount = {};
     const finalCount = [];
-    projects.map(project => {
+    projects.forEach(project => {
       for (let stack of project.footer) {
         if (stackCount[stack]) {
           stackCount[stack] += 1;
