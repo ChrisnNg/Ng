@@ -40,7 +40,7 @@ function App() {
     const allCards = [];
     arrayOfCards.forEach(card => {
       if (card.footer) {
-        card.footer.join(" ");
+        card.footer = card.footer.join(" ");
       } else card["footer"] = null;
 
       allCards.push(
