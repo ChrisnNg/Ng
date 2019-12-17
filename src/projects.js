@@ -7,8 +7,41 @@ import scheduler from "./assets/scheduler.gif";
 import tweeter from "./assets/tweeter.png";
 import lotide from "./assets/lotide.png";
 import tinyapp from "./assets/tinyapp.png";
+import jobhunt from "./assets/jobhunt.png";
 
 export let projects = [
+  {
+    title: (
+      <a
+        href="https://github.com/ChrisnNg/Job.Hunt"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Job.Hunt
+      </a>
+    ),
+    text: (
+      <>
+        <span>
+          A simple react application designed to help job seek's hunt their
+          jobs. This app is built off ZipRecruiter's job search API and is built
+          as a Minimum Viable Product.
+          <br />
+          Hosted{" "}
+          <a
+            href="https://unruffled-hugle-58dcdd.netlify.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Here
+          </a>
+          &nbsp; on Heroku.
+        </span>
+      </>
+    ),
+    imgsrc: jobhunt,
+    footer: ["Javascript", "HTML", "CSS", "ReactJS"]
+  },
   {
     title: (
       <a
