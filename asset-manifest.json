@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Ng/static/css/main.41c6eb47.chunk.css",
-    "main.js": "/Ng/static/js/main.68b73529.chunk.js",
-    "main.js.map": "/Ng/static/js/main.68b73529.chunk.js.map",
+    "main.js": "/Ng/static/js/main.fe568cf9.chunk.js",
+    "main.js.map": "/Ng/static/js/main.fe568cf9.chunk.js.map",
     "runtime-main.js": "/Ng/static/js/runtime-main.457c582a.js",
     "runtime-main.js.map": "/Ng/static/js/runtime-main.457c582a.js.map",
     "static/css/2.53c20c32.chunk.css": "/Ng/static/css/2.53c20c32.chunk.css",
-    "static/js/2.4bfd5c5d.chunk.js": "/Ng/static/js/2.4bfd5c5d.chunk.js",
-    "static/js/2.4bfd5c5d.chunk.js.map": "/Ng/static/js/2.4bfd5c5d.chunk.js.map",
+    "static/js/2.e28b7707.chunk.js": "/Ng/static/js/2.e28b7707.chunk.js",
+    "static/js/2.e28b7707.chunk.js.map": "/Ng/static/js/2.e28b7707.chunk.js.map",
     "index.html": "/Ng/index.html",
-    "precache-manifest.838450ea70a6caaec93147c993152c50.js": "/Ng/precache-manifest.838450ea70a6caaec93147c993152c50.js",
+    "precache-manifest.6a183f83133235a833ae628bfb789c62.js": "/Ng/precache-manifest.6a183f83133235a833ae628bfb789c62.js",
     "service-worker.js": "/Ng/service-worker.js",
     "static/css/2.53c20c32.chunk.css.map": "/Ng/static/css/2.53c20c32.chunk.css.map",
     "static/css/main.41c6eb47.chunk.css.map": "/Ng/static/css/main.41c6eb47.chunk.css.map",
@@ -18,11 +18,13 @@
     "static/media/db.png": "/Ng/static/media/db.5498c7a1.png",
     "static/media/fundamentals.png": "/Ng/static/media/fundamentals.09ce52d8.png",
     "static/media/hobby.jpg": "/Ng/static/media/hobby.60aa5601.jpg",
+    "static/media/jobhunt.png": "/Ng/static/media/jobhunt.3a1d0718.png",
     "static/media/jsNode.png": "/Ng/static/media/jsNode.f4767e4c.png",
     "static/media/jungle_main.png": "/Ng/static/media/jungle_main.7935aeb5.png",
     "static/media/lhl.jpg": "/Ng/static/media/lhl.5c1554fe.jpg",
     "static/media/lotide.png": "/Ng/static/media/lotide.ce6fe1a7.png",
     "static/media/miso_list_landing.png": "/Ng/static/media/miso_list_landing.98dc96c7.png",
+    "static/media/pairprogramming.png": "/Ng/static/media/pairprogramming.e35fad4e.png",
     "static/media/pfp.png": "/Ng/static/media/pfp.50563cac.png",
     "static/media/Landing.css": "/Ng/static/media/planetside.01c409dc.png",
     "static/media/react.png": "/Ng/static/media/react.5632b800.png",
@@ -35,8 +37,8 @@
   "entrypoints": [
     "static/js/runtime-main.457c582a.js",
     "static/css/2.53c20c32.chunk.css",
-    "static/js/2.4bfd5c5d.chunk.js",
+    "static/js/2.e28b7707.chunk.js",
     "static/css/main.41c6eb47.chunk.css",
-    "static/js/main.68b73529.chunk.js"
+    "static/js/main.fe568cf9.chunk.js"
   ]
 }

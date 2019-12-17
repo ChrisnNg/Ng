@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "31839600ab79603ade38825449dc5794",
+    "revision": "f4062509de6f33b803fbb5940fe96b55",
     "url": "/Ng/index.html"
   },
   {
-    "revision": "45dba97e537fe623922f",
+    "revision": "014210126c61be34dad8",
     "url": "/Ng/static/css/2.53c20c32.chunk.css"
   },
   {
-    "revision": "f3620719a43f1149f348",
+    "revision": "93ed7410ebed44e93541",
     "url": "/Ng/static/css/main.41c6eb47.chunk.css"
   },
   {
-    "revision": "45dba97e537fe623922f",
-    "url": "/Ng/static/js/2.4bfd5c5d.chunk.js"
+    "revision": "014210126c61be34dad8",
+    "url": "/Ng/static/js/2.e28b7707.chunk.js"
   },
   {
-    "revision": "f3620719a43f1149f348",
-    "url": "/Ng/static/js/main.68b73529.chunk.js"
+    "revision": "93ed7410ebed44e93541",
+    "url": "/Ng/static/js/main.fe568cf9.chunk.js"
   },
   {
     "revision": "ab65c5a9d90e348963b5",
@@ -44,6 +44,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Ng/static/media/hobby.60aa5601.jpg"
   },
   {
+    "revision": "3a1d0718d8526fae3bcd97729c452f1e",
+    "url": "/Ng/static/media/jobhunt.3a1d0718.png"
+  },
+  {
     "revision": "f4767e4c140afd7c232b4c9ef7ce7fc7",
     "url": "/Ng/static/media/jsNode.f4767e4c.png"
   },
@@ -62,6 +66,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "98dc96c706d2d5f77342c7e2b32bc5a5",
     "url": "/Ng/static/media/miso_list_landing.98dc96c7.png"
+  },
+  {
+    "revision": "e35fad4e80f05b108cf6fc8140b53091",
+    "url": "/Ng/static/media/pairprogramming.e35fad4e.png"
   },
   {
     "revision": "50563cac084f7cbe88bd2eac2998320d",
