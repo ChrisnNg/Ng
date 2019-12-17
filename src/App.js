@@ -86,21 +86,25 @@ function App() {
           animated
           variant={"primary"}
           now={(stackCount["Axios"] / projects.length) * 100}
-          label={`${"Axios"} ${(stackCount["Axios"] / projects.length) * 100}%`}
+          label={`${"Axios"} ${Math.round(
+            (stackCount["Axios"] / projects.length) * 100
+          )}%`}
         />
         <ProgressBar
           animated
           variant={"primary"}
           now={(stackCount["Node.js & Express"] / projects.length) * 100}
-          label={`${"Node.js & Express"} ${(stackCount["Node.js & Express"] /
-            projects.length) *
-            100}%`}
+          label={`${"Node.js & Express"} ${Math.round(
+            (stackCount["Node.js & Express"] / projects.length) * 100
+          )}%`}
         />
         <ProgressBar
           animated
           variant={"primary"}
           now={(stackCount["Ajax"] / projects.length) * 100}
-          label={`${"Ajax"} ${(stackCount["Ajax"] / projects.length) * 100}%`}
+          label={`${"Ajax"} ${Math.round(
+            (stackCount["Ajax"] / projects.length) * 100
+          )}%`}
         />
       </ProgressBar>
     );
@@ -110,48 +114,57 @@ function App() {
         animated
         variant={"dark"}
         now={(stackCount["Mocha"] / projects.length) * 100}
-        label={`${"Mocha"} ${(stackCount["Mocha"] / projects.length) * 100}%`}
+        label={`${"Mocha"} ${Math.round(
+          (stackCount["Mocha"] / projects.length) * 100
+        )}%`}
       />,
       <ProgressBar
         animated
         variant={"dark"}
         now={(stackCount["Chai"] / projects.length) * 100}
-        label={`${"Chai"} ${(stackCount["Chai"] / projects.length) * 100}%`}
+        label={`${"Chai"} ${Math.round(
+          (stackCount["Chai"] / projects.length) * 100
+        )}%`}
       />,
       <ProgressBar
         animated
         variant={"dark"}
         now={(stackCount["Capybara"] / projects.length) * 100}
-        label={`${"Capybara"} ${(stackCount["Capybara"] / projects.length) *
-          100}%`}
+        label={`${"Capybara"} ${Math.round(
+          (stackCount["Capybara"] / projects.length) * 100
+        )}%`}
       />,
       <ProgressBar
         animated
         variant={"dark"}
         now={(stackCount["Poltergeist"] / projects.length) * 100}
-        label={`${"Poltergeist"} ${(stackCount["Poltergeist"] /
-          projects.length) *
-          100}%`}
+        label={`${"Poltergeist"} ${Math.round(
+          (stackCount["Poltergeist"] / projects.length) * 100
+        )}%`}
       />,
       <ProgressBar
         animated
         variant={"dark"}
         now={(stackCount["Storybook"] / projects.length) * 100}
-        label={`${"Storybook"} ${(stackCount["Storybook"] / projects.length) *
-          100}%`}
+        label={`${"Storybook"} ${Math.round(
+          (stackCount["Storybook"] / projects.length) * 100
+        )}%`}
       />,
       <ProgressBar
         animated
         variant={"dark"}
         now={(stackCount["Cypress"] / projects.length) * 100}
-        label={`${"Cypress"} ${(stackCount["Cypress"] / projects.length) *
-          100}%`}
+        label={`${"Cypress"} ${Math.round(
+          (stackCount["Cypress"] / projects.length) * 100
+        )}%`}
       />,
       <ProgressBar
         animated
         variant={"dark"}
         now={(stackCount["Jest"] / projects.length) * 100}
-        label={`${"Jest"} ${(stackCount["Jest"] / projects.length) * 100}%`}
+        label={`${"Jest"} ${Math.round(
+          (stackCount["Jest"] / projects.length) * 100
+        )}%`}
       />
     );
 
@@ -188,7 +201,9 @@ function App() {
           animated
           variant={variant}
           now={(stackCount[stack] / projects.length) * 100}
-          label={`${stack} ${(stackCount[stack] / projects.length) * 100}%`}
+          label={`${stack} ${Math.round(
+            (stackCount[stack] / projects.length) * 100
+          )}%`}
         />
       );
     }
