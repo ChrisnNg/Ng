@@ -11,6 +11,7 @@ import htmlcss from "./assets/htmlcss.png";
 import jsNode from "./assets/jsNode.png";
 import ruby from "./assets/ruby.png";
 import testing from "./assets/testing.png";
+import pairprogramming from "./assets/pairprogramming.png";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -497,14 +498,29 @@ function App() {
                       }
                       text={
                         <>
-                          Published on Medium!
-                          <br />
-                          This article was written during my time at Lighthouse
-                          Labs, and serves to explain how the event loop feeds
-                          into the call stack.
+                          Explains how Javascript behaves as a multi-threaded
+                          language despite being single-threaded
                         </>
                       }
                       imgsrc={stackdata}
+                    />
+                    <Card
+                      title={
+                        <a
+                          href="https://medium.com/@cristopherng/pair-programming-ed0e7fc16aa7"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Pair Programming: My experience with it in bootcamp
+                        </a>
+                      }
+                      text={
+                        <>
+                          A report on my experiences pair-programming in the
+                          Lighthouse Labs bootcamp.
+                        </>
+                      }
+                      imgsrc={pairprogramming}
                     />
                   </Fade>
                 </Col>

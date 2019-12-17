@@ -47,7 +47,7 @@ const Nav = () => {
           Projects
         </Link>
         <a
-          href="https://resume.creddle.io/resume/ei50h47r5km"
+          href="https://resume.creddle.io/resume/fllf53dk8p7"
           target="_blank"
           rel="noopener noreferrer"
         >
