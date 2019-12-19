@@ -18,7 +18,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Nav";
 import Card from "./components/Card";
 import CardColumns from "react-bootstrap/CardColumns";
-import { Row, Container, Col, ProgressBar, Button } from "react-bootstrap";
+import { Row, Container, Col, Button } from "react-bootstrap";
 import Landing from "./components/Landing.js";
 import Fade from "react-reveal/Fade";
 import coding from "./assets/coding.jpg";
@@ -58,163 +58,12 @@ function App() {
     return allCards;
   }
 
-  const [Show, handleShow] = useState("hidden");
   const [loaded, setLoaded] = useState(false);
-
-  function handleClick() {
-    if (Show === "hidden") {
-      handleShow("Show");
-      toast("Click on the Project titles to access their Githubs!", {
-        position: toast.POSITION.TOP_CENTER
-      });
-    } else handleShow("hidden");
-  }
-
-  function progressStack(projects) {
-    let stackCount = {};
-    const finalCount = [];
-    projects.forEach(project => {
-      for (let stack of project.footer) {
-        if (stackCount[stack]) {
-          stackCount[stack] += 1;
-        } else stackCount[stack] = 1;
-      }
-    });
-
-    finalCount.push(
-      <ProgressBar>
-        <ProgressBar
-          animated
-          variant={"primary"}
-          now={(stackCount["Axios"] / projects.length) * 100}
-          label={`${"Axios"} ${Math.round(
-            (stackCount["Axios"] / projects.length) * 100
-          )}%`}
-        />
-        <ProgressBar
-          animated
-          variant={"primary"}
-          now={(stackCount["Node.js & Express"] / projects.length) * 100}
-          label={`${"Node.js & Express"} ${Math.round(
-            (stackCount["Node.js & Express"] / projects.length) * 100
-          )}%`}
-        />
-        <ProgressBar
-          animated
-          variant={"primary"}
-          now={(stackCount["Ajax"] / projects.length) * 100}
-          label={`${"Ajax"} ${Math.round(
-            (stackCount["Ajax"] / projects.length) * 100
-          )}%`}
-        />
-      </ProgressBar>
-    );
-
-    finalCount.push(
-      <ProgressBar
-        animated
-        variant={"dark"}
-        now={(stackCount["Mocha"] / projects.length) * 100}
-        label={`${"Mocha"} ${Math.round(
-          (stackCount["Mocha"] / projects.length) * 100
-        )}%`}
-      />,
-      <ProgressBar
-        animated
-        variant={"dark"}
-        now={(stackCount["Chai"] / projects.length) * 100}
-        label={`${"Chai"} ${Math.round(
-          (stackCount["Chai"] / projects.length) * 100
-        )}%`}
-      />,
-      <ProgressBar
-        animated
-        variant={"dark"}
-        now={(stackCount["Capybara"] / projects.length) * 100}
-        label={`${"Capybara"} ${Math.round(
-          (stackCount["Capybara"] / projects.length) * 100
-        )}%`}
-      />,
-      <ProgressBar
-        animated
-        variant={"dark"}
-        now={(stackCount["Poltergeist"] / projects.length) * 100}
-        label={`${"Poltergeist"} ${Math.round(
-          (stackCount["Poltergeist"] / projects.length) * 100
-        )}%`}
-      />,
-      <ProgressBar
-        animated
-        variant={"dark"}
-        now={(stackCount["Storybook"] / projects.length) * 100}
-        label={`${"Storybook"} ${Math.round(
-          (stackCount["Storybook"] / projects.length) * 100
-        )}%`}
-      />,
-      <ProgressBar
-        animated
-        variant={"dark"}
-        now={(stackCount["Cypress"] / projects.length) * 100}
-        label={`${"Cypress"} ${Math.round(
-          (stackCount["Cypress"] / projects.length) * 100
-        )}%`}
-      />,
-      <ProgressBar
-        animated
-        variant={"dark"}
-        now={(stackCount["Jest"] / projects.length) * 100}
-        label={`${"Jest"} ${Math.round(
-          (stackCount["Jest"] / projects.length) * 100
-        )}%`}
-      />
-    );
-
-    [
-      "Axios",
-      "Node.js & Express",
-      "Ajax",
-      "Mocha",
-      "Chai",
-      "Capybara",
-      "Poltergeist",
-      "Storybook",
-      "Cypress",
-      "Jest"
-    ].map(stack => delete stackCount[stack]);
-
-    for (let stack in stackCount) {
-      let variant = "info";
-      if (
-        stack === "Javascript" ||
-        stack === "HTML" ||
-        stack === "CSS" ||
-        stack === "Ruby" ||
-        stack === "Golang"
-      ) {
-        variant = "success";
-      }
-      if (stack === "Postgres") {
-        variant = "danger";
-      }
-
-      finalCount.push(
-        <ProgressBar
-          animated
-          variant={variant}
-          now={(stackCount[stack] / projects.length) * 100}
-          label={`${stack} ${Math.round(
-            (stackCount[stack] / projects.length) * 100
-          )}%`}
-        />
-      );
-    }
-    return finalCount;
-  }
 
   useEffect(() => {
     setTimeout(() => {
       setLoaded(true);
-    }, 1250);
+    }, 1100);
   }, []);
 
   const defaultOptions = {
@@ -540,88 +389,6 @@ function App() {
             </Fade>
 
             <Container>
-              <Button variant="info" block onClick={handleClick} id="stack">
-                Tech Stacks
-              </Button>
-              <section className={Show}>
-                Color Scheme:
-                <div className="screen">
-                  <ProgressBar>
-                    <ProgressBar
-                      animated
-                      variant={"primary"}
-                      now={20}
-                      label={`HTTP/XMLHttp`}
-                    />
-
-                    <ProgressBar
-                      animated
-                      variant={"dark"}
-                      now={20}
-                      label={`Testing`}
-                    />
-
-                    <ProgressBar
-                      animated
-                      variant={"success"}
-                      now={20}
-                      label={`Languages`}
-                    />
-
-                    <ProgressBar
-                      animated
-                      variant={"danger"}
-                      now={20}
-                      label={`Database`}
-                    />
-
-                    <ProgressBar
-                      animated
-                      variant={"info"}
-                      now={20}
-                      label={`Framework/Library`}
-                    />
-                  </ProgressBar>
-                </div>
-                <div className="mobile">
-                  <ProgressBar
-                    animated
-                    variant={"primary"}
-                    now={100}
-                    label={`HTTP/XMLHttp`}
-                  />
-
-                  <ProgressBar
-                    animated
-                    variant={"dark"}
-                    now={100}
-                    label={`Testing`}
-                  />
-
-                  <ProgressBar
-                    animated
-                    variant={"success"}
-                    now={100}
-                    label={`Languages`}
-                  />
-
-                  <ProgressBar
-                    animated
-                    variant={"danger"}
-                    now={100}
-                    label={`Database`}
-                  />
-
-                  <ProgressBar
-                    animated
-                    variant={"info"}
-                    now={100}
-                    label={`Framework/Library`}
-                  />
-                </div>
-                Stack Presence of the Projects ({projects.length}) below
-                {progressStack(projects)}
-              </section>
               <CardColumns>{createCards(projects)}</CardColumns>
             </Container>
           </section>
