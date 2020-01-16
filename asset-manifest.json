@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Ng/static/css/main.41c6eb47.chunk.css",
-    "main.js": "/Ng/static/js/main.f0f5d1fe.chunk.js",
-    "main.js.map": "/Ng/static/js/main.f0f5d1fe.chunk.js.map",
+    "main.css": "/Ng/static/css/main.b4b06dbd.chunk.css",
+    "main.js": "/Ng/static/js/main.14b82846.chunk.js",
+    "main.js.map": "/Ng/static/js/main.14b82846.chunk.js.map",
     "runtime-main.js": "/Ng/static/js/runtime-main.457c582a.js",
     "runtime-main.js.map": "/Ng/static/js/runtime-main.457c582a.js.map",
     "static/css/2.a94142c2.chunk.css": "/Ng/static/css/2.a94142c2.chunk.css",
-    "static/js/2.5bbc5c24.chunk.js": "/Ng/static/js/2.5bbc5c24.chunk.js",
-    "static/js/2.5bbc5c24.chunk.js.map": "/Ng/static/js/2.5bbc5c24.chunk.js.map",
+    "static/js/2.3995db20.chunk.js": "/Ng/static/js/2.3995db20.chunk.js",
+    "static/js/2.3995db20.chunk.js.map": "/Ng/static/js/2.3995db20.chunk.js.map",
     "index.html": "/Ng/index.html",
-    "precache-manifest.405a2f57e6187766cce8b3a3ece04176.js": "/Ng/precache-manifest.405a2f57e6187766cce8b3a3ece04176.js",
+    "precache-manifest.f71880f7ed1587cbf8a21c5e89c664e6.js": "/Ng/precache-manifest.f71880f7ed1587cbf8a21c5e89c664e6.js",
     "service-worker.js": "/Ng/service-worker.js",
     "static/css/2.a94142c2.chunk.css.map": "/Ng/static/css/2.a94142c2.chunk.css.map",
-    "static/css/main.41c6eb47.chunk.css.map": "/Ng/static/css/main.41c6eb47.chunk.css.map",
+    "static/css/main.b4b06dbd.chunk.css.map": "/Ng/static/css/main.b4b06dbd.chunk.css.map",
     "static/media/cat_park.png": "/Ng/static/media/cat_park.7ff3400e.png",
     "static/media/coding.jpg": "/Ng/static/media/coding.0a9d18a2.jpg",
     "static/media/db.png": "/Ng/static/media/db.5498c7a1.png",
@@ -21,6 +21,7 @@
     "static/media/jobhunt.png": "/Ng/static/media/jobhunt.3a1d0718.png",
     "static/media/jsNode.png": "/Ng/static/media/jsNode.f4767e4c.png",
     "static/media/jungle_main.png": "/Ng/static/media/jungle_main.7935aeb5.png",
+    "static/media/leaguesearch.png": "/Ng/static/media/leaguesearch.d36f9fc8.png",
     "static/media/lhl.jpg": "/Ng/static/media/lhl.5c1554fe.jpg",
     "static/media/lotide.png": "/Ng/static/media/lotide.ce6fe1a7.png",
     "static/media/miso_list_landing.png": "/Ng/static/media/miso_list_landing.98dc96c7.png",
@@ -37,8 +38,8 @@
   "entrypoints": [
     "static/js/runtime-main.457c582a.js",
     "static/css/2.a94142c2.chunk.css",
-    "static/js/2.5bbc5c24.chunk.js",
-    "static/css/main.41c6eb47.chunk.css",
-    "static/js/main.f0f5d1fe.chunk.js"
+    "static/js/2.3995db20.chunk.js",
+    "static/css/main.b4b06dbd.chunk.css",
+    "static/js/main.14b82846.chunk.js"
   ]
 }

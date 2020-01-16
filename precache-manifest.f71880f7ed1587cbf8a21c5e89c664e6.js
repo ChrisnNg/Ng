@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "83be7a689f6008ff37511580ac3cab71",
+    "revision": "3f3d8871e46aa43c34a28f8d036bb657",
     "url": "/Ng/index.html"
   },
   {
-    "revision": "43c5477852a0f109a499",
+    "revision": "694e70450544df971ec5",
     "url": "/Ng/static/css/2.a94142c2.chunk.css"
   },
   {
-    "revision": "6426a436ff2f65e27c56",
-    "url": "/Ng/static/css/main.41c6eb47.chunk.css"
+    "revision": "3ad618709ea91ac6e8c8",
+    "url": "/Ng/static/css/main.b4b06dbd.chunk.css"
   },
   {
-    "revision": "43c5477852a0f109a499",
-    "url": "/Ng/static/js/2.5bbc5c24.chunk.js"
+    "revision": "694e70450544df971ec5",
+    "url": "/Ng/static/js/2.3995db20.chunk.js"
   },
   {
-    "revision": "6426a436ff2f65e27c56",
-    "url": "/Ng/static/js/main.f0f5d1fe.chunk.js"
+    "revision": "3ad618709ea91ac6e8c8",
+    "url": "/Ng/static/js/main.14b82846.chunk.js"
   },
   {
     "revision": "ab65c5a9d90e348963b5",
@@ -54,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7935aeb5886dd328b0736f4d57f15153",
     "url": "/Ng/static/media/jungle_main.7935aeb5.png"
+  },
+  {
+    "revision": "d36f9fc8e1eac538ee44c37263bbce5e",
+    "url": "/Ng/static/media/leaguesearch.d36f9fc8.png"
   },
   {
     "revision": "5c1554fecde1a877d17ccc42c69cc6dd",
