@@ -8,8 +8,42 @@ import tweeter from "./assets/tweeter.png";
 import lotide from "./assets/lotide.png";
 import tinyapp from "./assets/tinyapp.png";
 import jobhunt from "./assets/jobhunt.png";
+import leaguesearch from "./assets/leaguesearch.png";
 
 export let projects = [
+  {
+    title: (
+      <a
+        href="https://github.com/ChrisnNg/league-frontend"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LeagueSearch.GG
+      </a>
+    ),
+    text: (
+      <>
+        <span>
+          This is a Summoner information query, much like Op.gg and
+          Porofessor.gg. Built in React.js and features fully dynamic rendering
+          of information. Different css based on if viewed through mobile,
+          tablet, or desktop as well.
+          <br />
+          Hosted{" "}
+          <a
+            href="https://pedantic-bhaskara-90beb7.netlify.com/#/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Here
+          </a>
+          &nbsp; on Netlify.
+        </span>
+      </>
+    ),
+    imgsrc: leaguesearch,
+    footer: ["Javascript", "HTML", "CSS", "ReactJS", "Node.js"]
+  },
   {
     title: (
       <a
