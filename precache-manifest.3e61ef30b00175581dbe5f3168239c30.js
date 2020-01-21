@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3f3d8871e46aa43c34a28f8d036bb657",
+    "revision": "dc360ce571e906a77c636f2aca2ec123",
     "url": "/Ng/index.html"
   },
   {
-    "revision": "694e70450544df971ec5",
+    "revision": "ba9306288e6505f7369a",
     "url": "/Ng/static/css/2.a94142c2.chunk.css"
   },
   {
-    "revision": "3ad618709ea91ac6e8c8",
-    "url": "/Ng/static/css/main.b4b06dbd.chunk.css"
+    "revision": "f09d6ef3e0c2ea918d30",
+    "url": "/Ng/static/css/main.374c23f8.chunk.css"
   },
   {
-    "revision": "694e70450544df971ec5",
-    "url": "/Ng/static/js/2.3995db20.chunk.js"
+    "revision": "ba9306288e6505f7369a",
+    "url": "/Ng/static/js/2.ef008c92.chunk.js"
   },
   {
-    "revision": "3ad618709ea91ac6e8c8",
-    "url": "/Ng/static/js/main.14b82846.chunk.js"
+    "revision": "f09d6ef3e0c2ea918d30",
+    "url": "/Ng/static/js/main.080d1048.chunk.js"
   },
   {
     "revision": "ab65c5a9d90e348963b5",
@@ -106,5 +106,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "77e1925b8723586d398c61cede514ca4",
     "url": "/Ng/static/media/tweeter.77e1925b.png"
+  },
+  {
+    "revision": "533b61e99ad8680b957d435387ca6344",
+    "url": "/Ng/static/media/winedirect.533b61e9.png"
   }
 ]);

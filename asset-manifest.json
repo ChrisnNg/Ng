@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Ng/static/css/main.b4b06dbd.chunk.css",
-    "main.js": "/Ng/static/js/main.14b82846.chunk.js",
-    "main.js.map": "/Ng/static/js/main.14b82846.chunk.js.map",
+    "main.css": "/Ng/static/css/main.374c23f8.chunk.css",
+    "main.js": "/Ng/static/js/main.080d1048.chunk.js",
+    "main.js.map": "/Ng/static/js/main.080d1048.chunk.js.map",
     "runtime-main.js": "/Ng/static/js/runtime-main.457c582a.js",
     "runtime-main.js.map": "/Ng/static/js/runtime-main.457c582a.js.map",
     "static/css/2.a94142c2.chunk.css": "/Ng/static/css/2.a94142c2.chunk.css",
-    "static/js/2.3995db20.chunk.js": "/Ng/static/js/2.3995db20.chunk.js",
-    "static/js/2.3995db20.chunk.js.map": "/Ng/static/js/2.3995db20.chunk.js.map",
+    "static/js/2.ef008c92.chunk.js": "/Ng/static/js/2.ef008c92.chunk.js",
+    "static/js/2.ef008c92.chunk.js.map": "/Ng/static/js/2.ef008c92.chunk.js.map",
     "index.html": "/Ng/index.html",
-    "precache-manifest.f71880f7ed1587cbf8a21c5e89c664e6.js": "/Ng/precache-manifest.f71880f7ed1587cbf8a21c5e89c664e6.js",
+    "precache-manifest.3e61ef30b00175581dbe5f3168239c30.js": "/Ng/precache-manifest.3e61ef30b00175581dbe5f3168239c30.js",
     "service-worker.js": "/Ng/service-worker.js",
     "static/css/2.a94142c2.chunk.css.map": "/Ng/static/css/2.a94142c2.chunk.css.map",
-    "static/css/main.b4b06dbd.chunk.css.map": "/Ng/static/css/main.b4b06dbd.chunk.css.map",
+    "static/css/main.374c23f8.chunk.css.map": "/Ng/static/css/main.374c23f8.chunk.css.map",
     "static/media/cat_park.png": "/Ng/static/media/cat_park.7ff3400e.png",
     "static/media/coding.jpg": "/Ng/static/media/coding.0a9d18a2.jpg",
     "static/media/db.png": "/Ng/static/media/db.5498c7a1.png",
@@ -33,13 +33,14 @@
     "static/media/scheduler.gif": "/Ng/static/media/scheduler.e6d56686.gif",
     "static/media/stackdata.jpeg": "/Ng/static/media/stackdata.24bd911a.jpeg",
     "static/media/tinyapp.png": "/Ng/static/media/tinyapp.aa027918.png",
-    "static/media/tweeter.png": "/Ng/static/media/tweeter.77e1925b.png"
+    "static/media/tweeter.png": "/Ng/static/media/tweeter.77e1925b.png",
+    "static/media/winedirect.png": "/Ng/static/media/winedirect.533b61e9.png"
   },
   "entrypoints": [
     "static/js/runtime-main.457c582a.js",
     "static/css/2.a94142c2.chunk.css",
-    "static/js/2.3995db20.chunk.js",
-    "static/css/main.b4b06dbd.chunk.css",
-    "static/js/main.14b82846.chunk.js"
+    "static/js/2.ef008c92.chunk.js",
+    "static/css/main.374c23f8.chunk.css",
+    "static/js/main.080d1048.chunk.js"
   ]
 }
