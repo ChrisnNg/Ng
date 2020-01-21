@@ -9,8 +9,41 @@ import lotide from "./assets/lotide.png";
 import tinyapp from "./assets/tinyapp.png";
 import jobhunt from "./assets/jobhunt.png";
 import leaguesearch from "./assets/leaguesearch.png";
+import wineDirect from "./assets/winedirect.png";
 
 export let projects = [
+  {
+    title: (
+      <a
+        href="https://github.com/ChrisnNg/wineDirect"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        wineDirect Assignment
+      </a>
+    ),
+    text: (
+      <>
+        <span>
+          A 48hr timeboxed assignment to create a grocery store cash register.
+          Built with React.js and handles sales based on date, discounts for
+          bulk buys, and coupons valid only during certain scenarios.
+          <br />
+          Hosted{" "}
+          <a
+            href="https://zen-joliot-f34c37.netlify.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Here
+          </a>
+          &nbsp; on Netlify.
+        </span>
+      </>
+    ),
+    imgsrc: wineDirect,
+    footer: ["Javascript", "HTML", "CSS", "ReactJS"]
+  },
   {
     title: (
       <a
